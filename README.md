@@ -28,10 +28,11 @@ npm run dev
 npm run build
 ```
 
-## Doc
+## Docs
 
 You can check the (doc)[http://vuejs-templates.github.io/webpack/env.html]
- of vue-webpack.
+ of vue-webpack. Or (ZH-doc)[https://segmentfault.com/a/1190000006908772]
+
 
 ## TODO
 
