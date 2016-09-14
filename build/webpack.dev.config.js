@@ -12,12 +12,7 @@ module.exports = merge(baseWebpackConfig, {
         path.join(__dirname, '../src/main.js')
     ],
     module: {
-        loaders: [
-            {
-                test: /\.css/,
-                loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-            }
-        ]
+        loaders: utils.cssLoaders('development')
     },
     plugins: [
         new HtmlWebpackPlugin({

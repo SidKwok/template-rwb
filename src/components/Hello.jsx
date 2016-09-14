@@ -1,4 +1,6 @@
 import React from 'react';
+// import './Hello.scss'
+import './Hello.less'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -7,7 +9,10 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <div>{this.state.test}</div>
+            <div id="Hello">
+                <div className="msg">{this.state.test}</div>
+                <div className="info">hey</div>
+            </div>
         );
     }
 }

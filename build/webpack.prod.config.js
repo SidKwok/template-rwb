@@ -15,23 +15,13 @@ var webpackConfig = merge(baseWebpackConfig, {
     entry: [
         path.join(__dirname, '../src/main.js')
     ],
-    // output: {
-    //     path: config.build.assetsRoot,
-    //     filename: '[name]-[hash].min.js',
-    //     publicPath: '/'
-    // },
     output: {
         path: config.build.assetsRoot,
         filename: utils.assetsPath('js/[name].[chunkhash].js'),
         chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
     },
     module: {
-        loaders: [
-            {
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
-            }
-        ]
+        loaders: utils.cssLoaders('production')
     },
     plugins: [
         new webpack.DefinePlugin({

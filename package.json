@@ -1,11 +1,11 @@
 {
-  "name": "react-components",
+  "name": "react-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "some fantastic components",
+  "description": "A React projct",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SidKwok/react-components"
+    "url": "git+https://github.com/SidKwok/react-components.git"
   },
   "keywords": [
     "express",
@@ -16,7 +16,7 @@
   "author": "Sid Kwok",
   "license": "MIT",
   "scripts": {
-    "dev": "node build/server",
+    "dev": "node build/dev-server",
     "build": "node build/build.js",
     "build1": "rimraf dist && cross-env NODE_ENV=production webpack --config ./build/webpack.prod.config.js --progress --profile --colors"
   },
@@ -30,16 +30,23 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-2": "^6.13.0",
     "babel-register": "^6.14.0",
+    "connect-history-api-fallback": "^1.3.0",
     "css-loader": "^0.25.0",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
+    "http-proxy-middleware": "^0.17.1",
     "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.10.0",
     "ora": "^0.3.0",
     "postcss-loader": "^0.13.0",
     "react-dom": "^15.3.1",
     "react-transform-hmr": "^1.0.4",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.0.2",
     "shelljs": "^0.7.4",
     "stats-webpack-plugin": "^0.4.2",
     "style-loader": "^0.13.1",
@@ -51,5 +58,9 @@
   },
   "dependencies": {
     "react": "^15.3.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/SidKwok/react-components/issues"
+  },
+  "homepage": "https://github.com/SidKwok/react-components#readme"
 }
