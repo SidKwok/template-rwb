@@ -6,9 +6,10 @@ I think a fantastic boilerplate is good for us to learn a library such like **Vu
 
 ## What's included
  - **React** 15.3.1
+ - **JSX**
  - **ES6**
  - **Webpack**
- - **Express*** the dev-server.
+ - **Express** the dev-server.
  - **Hot-Reload**
  - **Proxy** I think most of the boilerplates drop this important feature.
  - **Global-Variable**

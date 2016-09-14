@@ -3,7 +3,7 @@ var path = require('path')
 
 module.exports = {
     // set your css loaders
-    cssLoaders: ['less', 'scss'],
+    cssLoaders: [],
     build: {
         env: require('./prod.env'),
         index: path.resolve(__dirname, '../dist/index.html'),

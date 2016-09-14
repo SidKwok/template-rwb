@@ -10,7 +10,6 @@ exports.assetsPath = function (_path) {
 
 exports.cssLoaders = function (env) {
     var isProd = (env === 'production');
-    console.log(isProd)
     var cssLoaders = [{
         test: /\.css$/,
         loader: isProd
@@ -33,6 +32,5 @@ exports.cssLoaders = function (env) {
                 : 'style!css!sass!postcss'
         });
     };
-    console.log(cssLoaders)
     return cssLoaders;
 }
