@@ -30,8 +30,8 @@ npm run build
 
 ## Docs
 
-You can check the (doc)[http://vuejs-templates.github.io/webpack/env.html]
- of vue-webpack. Or (ZH-doc)[https://segmentfault.com/a/1190000006908772]
+You can check the [doc](http://vuejs-templates.github.io/webpack/env.html)
+ of vue-webpack. Or [ZH-doc](https://segmentfault.com/a/1190000006908772)
 
 
 ## TODO
