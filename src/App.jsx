@@ -12,7 +12,7 @@ export default class App extends React.Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={logo} className="App-logo shake-rotate" alt="logo" />
                 </div>
                 <Hello></Hello>
             </div>
