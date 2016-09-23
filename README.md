@@ -36,7 +36,7 @@ You can check the [doc](http://vuejs-templates.github.io/webpack/env.html)
 
 ## TODO
 
-- [] testing
-- [] eslint
+- [ ] testing
+- [ ] eslint
 - [x] multiple css pre-processors
-- [] cli
+- [ ] cli
