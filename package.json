@@ -2,7 +2,7 @@
   "name": "react-webpack-boilerplate",
   "version": "1.0.0",
   "description": "A React projct",
-  "main": "server.js",
+  "main": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SidKwok/react-components.git"
