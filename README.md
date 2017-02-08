@@ -12,7 +12,7 @@
  - **Hot-Reload**
  - **Proxy** I think most of the boilerplates drop this important feature.
  - **Global-Variable**
- - **ESlint**
+ - **eslint**
 
 ## Usage
 

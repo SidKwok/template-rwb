@@ -4,6 +4,8 @@
         "stage-3",
         "react"
     ],
+    "comments": false,
+    "plugins": ["transform-runtime"],
     "env": {
         "development": {
             "plugins": [
