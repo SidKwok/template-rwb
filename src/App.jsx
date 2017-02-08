@@ -1,7 +1,7 @@
 import React from 'react';
-import Hello from './components/Hello/Hello';
+// import Hello from './components/Hello/Hello';
 import logo from './assets/logo.svg';
-import './App.css';
+// import './App.css';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -14,7 +14,7 @@ export default class App extends React.Component {
                 <div className="App-header">
                     <img src={logo} className="App-logo shake-rotate" alt="logo" />
                 </div>
-                <Hello></Hello>
+                {/* <Hello></Hello> */}
             </div>
         );
     }
