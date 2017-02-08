@@ -16,7 +16,6 @@
   "author": "Sid Kwok",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server",
     "dev": "node build/dev-server",
     "build": "node build/build.js"
   },

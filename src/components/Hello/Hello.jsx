@@ -12,7 +12,6 @@ export default class App extends React.Component {
     render() {
         return (
             <div id="Hello">
-                {process.env.NODE_ENV}
                 <div className="msg">{this.state.msg}</div>
                 <p className="info">{this.state.info}</p>
             </div>
