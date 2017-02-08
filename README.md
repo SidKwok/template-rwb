@@ -1,27 +1,28 @@
 # react-webpack-boilerplate
 
 > A SPA boilerplate with React, built with love.
-> This Branch is for webpack 2.2
 
-## Goals
- - **React**
+## Features
+ - **React** 15.4.2
  - **JSX**
  - **ES6**
  - **Webpack**
  - **Express** the dev-server.
  - **Hot-Reload**
- - **Proxy** I think most of the boilerplates drop this important feature.
+ - **Proxy**
  - **Global-Variable**
  - **eslint**
 
 ## Usage
 
-In the very beginning you need to `clone` this project in your local environment.
 ```bash
+# install sao first
+yarn global add sao
+
 # install all this dependencies.
 npm install
 
-# development, default port: 3000
+# development, default port: 8080
 npm run dev
 
 # production
