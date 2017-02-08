@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
+import App from './App';
 import { AppContainer } from 'react-hot-loader';
 
 const render = Component => {
@@ -14,8 +14,6 @@ const render = Component => {
 
 render(App);
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-// 模块热替换的API
 if (module.hot) {
-    module.hot.accept('./App.jsx', () => render(App));
+    module.hot.accept('./App', () => render(App));
 }
