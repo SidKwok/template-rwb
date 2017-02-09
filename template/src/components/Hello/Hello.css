@@ -5,3 +5,20 @@
 #Hello .info {
     color: #e9e9e9;
 }
+#Hello .doc i {
+    font-size: 20px;
+}
+#Hello .doc,
+#Hello .doc a {
+    color: #fff;
+}
+{{#if router}}
+#Hello .doc .router {
+    color: #61dafb;
+}
+{{/if}}
+{{#if redux}}
+#Hello .doc .redux {
+    color: #7649bb;
+}
+{{/if}}

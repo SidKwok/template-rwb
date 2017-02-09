@@ -20,8 +20,7 @@
 npm install -g sao
 
 # download the template
-# add --install in the first time
-sao SidKwok/react-webpack-boilerplate
+sao SidKwok/react-webpack-boilerplate new-project --install
 
 # install all this dependencies.
 npm install

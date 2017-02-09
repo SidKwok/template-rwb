@@ -1,9 +1,6 @@
 .main-view p {
     color: #fff;
 }
-.main-view a {
-    color: #61dafb;
-}
 .main-view .btn-group .btn {
     display: inline-block;
     text-decoration: none;

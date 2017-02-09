@@ -35,6 +35,10 @@ module.exports = {
                     short: 'hash'
                 }
             ]
+        },
+        redux: {
+            type: 'confirm',
+            message: 'Install redux?'
         }
     },
     filters: {

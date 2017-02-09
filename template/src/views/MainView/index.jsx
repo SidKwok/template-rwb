@@ -10,8 +10,6 @@ export default class FooView extends Component {
     render() {
         return (
             <div className="main-view">
-                <p>Check react-router's <a href="https://github.com/ReactTraining/react-router/tree/master/docs" target="_blank">doc</a>
-                    (or <a href="http://react-guide.github.io/react-router-cn/index.html">zh-doc</a>) to find out more configs.</p>
                 <div className="btn-group">
                     <Link to="/foo" className="btn" activeClassName="active">To Foo</Link>
                     <Link to="/bar" className="btn" activeClassName="active">To Bar</Link>
