@@ -4,20 +4,24 @@
 
 ## Features
  - **React** 15.4.2
+ - **react-router**
  - **JSX**
  - **ES6**
- - **Webpack**
+ - **webpack2**
  - **Express** the dev-server.
  - **Hot-Reload**
  - **Proxy**
  - **Global-Variable**
- - **eslint**
 
 ## Usage
 
 ```bash
 # install sao first
-yarn global add sao
+npm install -g sao
+
+# download the template
+# add --install in the first time
+sao SidKwok/react-webpack-boilerplate#sao
 
 # install all this dependencies.
 npm install

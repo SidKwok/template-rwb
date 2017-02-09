@@ -12,7 +12,15 @@ module.exports = {
         author: {
             message: 'Author',
             role: 'git:name'
+        },
+        router: {
+            message: 'Install react-router?',
+            type: 'confirm'
         }
+    },
+    filters: {
+        'src/routes/**/*': 'router',
+        'src/views／**/*': 'router'
     },
     post({isNewFolder, folderName, chalk, install, init, answers}) {
         console.log(chalk.green('\n  To get started:\n'));
