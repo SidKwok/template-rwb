@@ -37,3 +37,4 @@ npm run build
 * [ ] eslint
 * [ ] unit test
 * [ ] e2e test
+* [ ] redux config
