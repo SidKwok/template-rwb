@@ -34,6 +34,6 @@ npm run build
 ```
 
 ## TODO
-[ ] eslint
-[ ] unit test
-[ ] e2e test
+* [ ] eslint
+* [ ] unit test
+* [ ] e2e test
