@@ -1,10 +1,10 @@
 # react-webpack-boilerplate
 
 > A SPA boilerplate with React, built with love.
-> This Branch is for webpack 2.2
 
 ## Features
- - **React** 15.4.2
+ - **React 15.4.2**
+ - **react-router 3.0.2** will be updated to v4 whenever the version is stable.
  - **JSX**
  - **ES6**
  - **webpack 2.2**
@@ -12,12 +12,17 @@
  - **Hot-Reload**
  - **Proxy**
  - **Global-Variable**
- - **eslint**
 
 ## Usage
 
-In the very beginning you need to `clone` this project in your local environment.
 ```bash
+# install sao first
+npm install -g sao
+
+# download the template
+# add --install in the first time
+sao SidKwok/react-webpack-boilerplate
+
 # install all this dependencies.
 npm install
 
@@ -27,3 +32,8 @@ npm run dev
 # production
 npm run build
 ```
+
+## TODO
+[ ] eslint
+[ ] unit test
+[ ] e2e test

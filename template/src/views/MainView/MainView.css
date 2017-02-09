@@ -1,0 +1,24 @@
+.main-view p {
+    color: #fff;
+}
+.main-view a {
+    color: #61dafb;
+}
+.main-view .btn-group .btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+    margin: 0 12px;
+    color: #fff;
+    transition: .1s;
+}
+
+.main-view .btn-group .btn:hover,
+.main-view .btn-group .active {
+    background-color: #fff;
+    color: #2d2d2d;
+}
