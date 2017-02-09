@@ -2,7 +2,7 @@ module.exports = {
     template: 'handlebars',
     prompts: {
         name: {
-            message: `Project name`,
+            message: 'Project name',
             role: 'folder:name'
         },
         description: {
@@ -16,6 +16,25 @@ module.exports = {
         router: {
             message: 'Install react-router?',
             type: 'confirm'
+        },
+        history: {
+            when: function(obj) {
+                return obj.router;
+            },
+            type: 'list',
+            message: 'Pick the type of router',
+            choices: [
+                {
+                    name: 'html5 history api',
+                    value: 'browserHistory',
+                    short: 'html5'
+                },
+                {
+                    name: 'hash router',
+                    value: 'hashHistory',
+                    short: 'hash'
+                }
+            ]
         }
     },
     filters: {

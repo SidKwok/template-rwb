@@ -18,12 +18,3 @@ export default [
         ]
     }
 ];
-
-// export default () => (
-//     <Router history={browserHistory}>
-//         <Route path="/" component={MainView}>
-//             <Route path="foo" component={FooView}/>
-//             <Route path="bar" component={BarView}/>
-//         </Route>
-//     </Router>
-// );
