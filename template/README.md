@@ -14,4 +14,9 @@ npm run dev
 
 # production
 npm run build
+
+{{#lint}}
+# lint the files
+npm run lint
+{{/lint}}
 ```

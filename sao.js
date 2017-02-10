@@ -71,5 +71,8 @@ module.exports = {
 
         console.log(chalk.green('\n  To build for production:\n'));
         console.log('  npm run build\n');
+
+        console.log(chalk.green('\n  Documentation:\n'));
+        console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
     }
 };
