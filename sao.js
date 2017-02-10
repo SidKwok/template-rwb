@@ -36,10 +36,10 @@ module.exports = {
                 }
             ]
         },
-        redux: {
-            type: 'confirm',
-            message: 'Install redux?'
-        }
+        // redux: {
+        //     type: 'confirm',
+        //     message: 'Install redux?'
+        // }
     },
     filters: {
         'src/routes/**/*': 'router',
