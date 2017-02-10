@@ -13,6 +13,7 @@
 - **Hot-Reload**
 - **Proxy**
 - **Global-Variable**
+- **ESlint** with `standard` and `standard-react`
 
 ## Usage
 
