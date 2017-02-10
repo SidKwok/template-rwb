@@ -40,7 +40,7 @@ npm run lint
 It is pretty much the same config as [vue-cli/webpack](https://github.com/vuejs-templates/webpack/tree/master/docs). If you are familiar with `vue-cli`, you may have a great joy with this boilerplate.
 
 ### Pre-Processor
-You can take `less`, `sass`, or `stylus` to as your CSS pre-processors, but you need to install the dependencies first. For example, to use `less`:
+You can take `less`, `sass`, or `stylus` as your CSS pre-processors, after installing the dependencies. For example, to use `less`:
 ```bash
 npm install less less-loader --save-dev
 ```
