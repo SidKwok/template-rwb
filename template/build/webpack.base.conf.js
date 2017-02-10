@@ -33,6 +33,17 @@ module.exports = {
     },
     module: {
         rules: [
+            {{#lint}}
+            {
+                test: /\.jsx?$/,
+                loader: 'eslint-loader',
+                enforce: 'pre',
+                include: [resolve('src'), resolve('test')],
+                options: {
+                    formatter: require('eslint-friendly-formatter')
+                }
+            },
+            {{/lint}}
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',

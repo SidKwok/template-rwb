@@ -12,6 +12,7 @@
  - **Hot-Reload**
  - **Proxy**
  - **Global-Variable**
+ - **ESlint** with `standard` and `standard-react`
 
 ## Usage
 
@@ -30,10 +31,13 @@ npm run dev
 
 # production
 npm run build
+
+# lint the files (if use eslint)
+npm run lint
 ```
 
 ## TODO
-* [ ] eslint
+* [x] eslint
 * [ ] unit test
 * [ ] e2e test
 * [ ] redux config

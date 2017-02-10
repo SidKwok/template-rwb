@@ -9,15 +9,19 @@
     "node",
     "spa"
   ],
-  "author": "Sid Kwok",
+  "author": "{{ name }}",
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server",
-    "build": "node build/build.js"
+    "build": "node build/build.js"{{#lint}},
+    "lint": "eslint --ext .js,.jsx src"{{/lint}}
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
+    {{#lint}}
+    "babel-eslint": "^7.1.1",
+    {{/lint}}
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
@@ -26,6 +30,17 @@
     "chalk": "^1.1.3",
     "connect-history-api-fallback": "^1.3.0",
     "css-loader": "^0.26.1",
+    {{#lint}}
+    "eslint": "^3.15.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-babel": "^4.0.1",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1",
+    {{/lint}}
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.14.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.2",
@@ -49,10 +64,10 @@
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"{{#if router}},
-    "react-router": "^3.0.2"{{/if}}{{#if redux}},
+    "react-dom": "^15.4.2"{{#router}},
+    "react-router": "^3.0.2"{{/router}}{{#redux}},
     "react-redux": "^5.0.2",
-    "redux": "^3.6.0"{{/if}}
+    "redux": "^3.6.0"{{/redux}}
   },
   "engines": {
     "node": ">= 4.0.0",

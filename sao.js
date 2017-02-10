@@ -1,5 +1,14 @@
 module.exports = {
     template: 'handlebars',
+    templateOptions: {
+        helpers: {
+            if_eq: function(a, b, opts) {
+                return a === b
+                    ? opts.fn(this)
+                    : opts.inverse(this);
+                }
+        }
+    },
     prompts: {
         name: {
             message: 'Project name',
@@ -40,10 +49,17 @@ module.exports = {
         //     type: 'confirm',
         //     message: 'Install redux?'
         // }
+        lint: {
+            type: 'confirm',
+            message: 'Use ESLint to lint your code?',
+            short: 'Standard'
+        },
     },
     filters: {
         'src/routes/**/*': 'router',
-        'src/views／**/*': 'router'
+        'src/views／**/*': 'router',
+        '.eslintrc.js': 'lint',
+        '.eslintignore': 'lint'
     },
     post({isNewFolder, folderName, chalk, install, init, answers}) {
         console.log(chalk.green('\n  To get started:\n'));

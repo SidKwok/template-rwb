@@ -12,13 +12,13 @@
 #Hello .doc a {
     color: #fff;
 }
-{{#if router}}
+{{#router}}
 #Hello .doc .router {
     color: #61dafb;
 }
-{{/if}}
-{{#if redux}}
+{{/router}}
+{{#redux}}
 #Hello .doc .redux {
     color: #7649bb;
 }
-{{/if}}
+{{/redux}}
