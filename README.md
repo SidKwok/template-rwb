@@ -87,3 +87,4 @@ anywhere
 * [ ] unit test
 * [ ] e2e test
 * [x] **Redux** comming soon!
+* [ ] hot-reload for redux
