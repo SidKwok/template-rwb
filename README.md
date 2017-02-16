@@ -4,6 +4,7 @@
 
 ## Features
  - **React 15.4.2**
+ - **Redux**
  - **react-router 3.0.2** will be updated to v4 whenever the version is stable.
  - **JSX**
  - **ES6**
@@ -85,4 +86,4 @@ anywhere
 * [x] eslint
 * [ ] unit test
 * [ ] e2e test
-* [ ] **Redux** comming soon!
+* [x] **Redux** comming soon!

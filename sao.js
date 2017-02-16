@@ -27,9 +27,7 @@ module.exports = {
             type: 'confirm'
         },
         history: {
-            when: function(obj) {
-                return obj.router;
-            },
+            when: 'router',
             type: 'list',
             message: 'Pick the type of router',
             choices: [
@@ -58,6 +56,8 @@ module.exports = {
     filters: {
         'src/routes/**/*': 'router',
         'src/views／**/*': 'router',
+        'src/redux/**/*': 'redux',
+        'src/components/Counter/**/*': 'redux',
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint'
     },
