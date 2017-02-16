@@ -10,7 +10,7 @@
 - **ES6**
 - **webpack 2.2**
 - **Express** the dev-server.
-- **Hot-Reload**
+- **Hot-Reload**, support both React and Redux
 - **Proxy**
 - **Global-Variable**
 - **ESlint** with `standard` and `standard-react`

@@ -1,5 +1,5 @@
 {
-  "name": "react-demo",
+  "name": "react-webpack-boilerplate",
   "version": "1.0.0",
   "description": "A React project",
   "main": "src/main.js",
@@ -9,7 +9,7 @@
     "node",
     "spa"
   ],
-  "author": "react-demo",
+  "author": "react-webpack-boilerplate",
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server",
@@ -62,7 +62,9 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
+    "react-router": "^3.0.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
   },
   "engines": {
     "node": ">= 4.0.0",
