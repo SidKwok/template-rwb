@@ -45,10 +45,10 @@ module.exports = {
                 }
             ]
         },
-        // redux: {
-        //     type: 'confirm',
-        //     message: 'Install redux?'
-        // }
+        redux: {
+            type: 'confirm',
+            message: 'Install redux?'
+        },
         lint: {
             type: 'confirm',
             message: 'Use ESLint to lint your code?',
