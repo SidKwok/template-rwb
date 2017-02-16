@@ -9,13 +9,13 @@ import routes from 'routes'
 {{/router}}
 {{#redux}}
 
-import { createStore, bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux'
 import { Provider, connect } from 'react-redux'
 import * as CounterActions from '$redux/actions'
-import reducer from '$redux/reducers'
 import Counter from 'components/Counter'
+import configureStore from '$redux/store/configureStore'
 
-const store = createStore(reducer)
+const store = configureStore()
 
 const mapStateToProps = state => ({
   counter: state.counter

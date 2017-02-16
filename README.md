@@ -5,15 +5,15 @@
 ## Features
  - **React 15.4.2**
  - **Redux**
- - **react-router 3.0.2** will be updated to v4 whenever the version is stable.
+ - **react-router 3.0.2**, will be updated to v4 whenever the version is stable.
  - **JSX**
  - **ES6**
  - **webpack 2.2**
- - **Express** the dev-server.
- - **Hot-Reload**
+ - **Express**, the dev-server.
+ - **Hot-Reload**, support both React and Redux!
  - **Proxy**
  - **Global-Variable**
- - **ESlint** with `standard` and `standard-react`
+ - **ESlint**, with `standard` and `standard-react`
 
 ## Usage
 
@@ -87,4 +87,6 @@ anywhere
 * [ ] unit test
 * [ ] e2e test
 * [x] **Redux** comming soon!
-* [ ] hot-reload for redux
+* [x] hot-reload for redux
+* [ ] better structure for redux
+* [ ] support redux-devtools
