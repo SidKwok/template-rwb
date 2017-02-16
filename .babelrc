@@ -5,7 +5,7 @@
         "react"
     ],
     "comments": false,
-    "plugins": ["transform-runtime"],
+    "plugins": ["transform-runtime", "transform-class-properties"],
     "env": {
         "development": {
             "plugins": [
