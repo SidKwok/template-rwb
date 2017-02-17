@@ -47,6 +47,23 @@ module.exports = {
             type: 'confirm',
             message: 'Install redux?'
         },
+        devtools: {
+            when: 'redux',
+            type: 'list',
+            message: 'Pick the type of redux-devtools',
+            choices: [
+                {
+                    name: 'redux-devtools-extension',
+                    value: 'extension',
+                    short: 'extension'
+                },
+                {
+                    name: 'redux-devtools',
+                    value: 'page',
+                    short: 'devtools'
+                }
+            ]
+        },
         lint: {
             type: 'confirm',
             message: 'Use ESLint to lint your code?',
@@ -69,10 +86,16 @@ module.exports = {
         console.log('  npm install');
         console.log('  npm run dev');
 
+        if (answers.devtools === 'extension') {
+            console.log(chalk.green('\n  To make redux-devtools-extension work:\n'));
+            console.log('  https://github.com/zalmoxisus/redux-devtools-extension\n');
+        }
+
         console.log(chalk.green('\n  To build for production:\n'));
         console.log('  npm run build');
 
         console.log(chalk.green('\n  Documentation:\n'));
         console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
+
     }
 };

@@ -1,15 +1,5 @@
-import { createStore } from 'redux'
-import rootReducer from '../reducers/index'
-
-export default function configureStore () {
-  const store = createStore(rootReducer)
-
-  if (module.hot) {
-    module.hot.accept('../reducers', () => {
-      const nextRootReducer = require('../reducers/index').default
-      store.replaceReducer(nextRootReducer)
-    })
-  }
-
-  return store
+if (process.env.NODE_ENV === 'production') {
+  module.exports = require('./configureStore.prod')
+} else {
+  module.exports = require('./configureStore.dev')
 }
