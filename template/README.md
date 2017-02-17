@@ -2,7 +2,6 @@
 
 > {{ description }}
 
-
 ## Usage
 
 ```bash

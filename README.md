@@ -4,7 +4,8 @@
 
 ## Features
  - **React 15.4.2**
- - **Redux**
+ - **Redux 3.6.0**
+ - **react-redux 5.0.2**, to bind React and Redux.
  - **react-router 3.0.2**, will be updated to v4 whenever the version is stable.
  - **JSX**
  - **ES6**
@@ -12,8 +13,9 @@
  - **Express**, the dev-server.
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**
- - **Global-Variable**
- - **ESlint**, with `standard` and `standard-react`
+ - **Environmental value**
+ - **ESlint**, with `standard` and `standard-react`.
+ - **Redux-devtools**, to make the stores more clear
 
 ## Usage
 
@@ -73,6 +75,9 @@ The boilerplate uses [react-hot-loader v3](https://github.com/gaearon/react-hot-
 ### ESlint
 [standard](https://github.com/feross/standard) and [standard-react](https://github.com/feross/standard-react) are the default style guides for this boilerplate, feel free to edit your own config in `.eslintrc.js`.
 
+### react-devtools
+This boilerplate has enabled the devtools' config automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
+
 ### Production
 The production files are built for server, so you are not supposed to visit `index.html` directly. To make it works, you should use a static server:
 ```bash
@@ -89,4 +94,4 @@ anywhere
 * [x] **Redux** comming soon!
 * [x] hot-reload for redux
 * [ ] better structure for redux
-* [ ] support redux-devtools
+* [x] support redux-devtools-extension
