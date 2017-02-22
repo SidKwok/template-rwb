@@ -1,7 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import './Counter.css'
 
 export default class Counter extends Component {
+  static propTypes = {
+    actions: PropTypes.object,
+    'actions.increment': PropTypes.func,
+    counter: PropTypes.object,
+    'counter.count': PropTypes.number
+  }
   handleClick = () => {
     this.props.actions.increment()
   }

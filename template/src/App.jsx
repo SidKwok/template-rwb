@@ -37,8 +37,8 @@ export default class App extends Component {
       <div className='App'>
         <div className='App-header'>
           <img src={logo} className='App-logo shake-rotate' alt='logo' />
-        </div>
-        {{#redux}}<Provider store={store}>
+        </div>{{#redux}}
+        <Provider store={store}>
           <CounterWithStore />
         </Provider>{{/redux}}
         <Hello />{{#router}}
