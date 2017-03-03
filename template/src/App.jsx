@@ -42,7 +42,7 @@ export default class App extends Component {
           <CounterWithStore />
         </Provider>{{/redux}}
         <Hello />{{#router}}
-        <Router history={history} routes={routes} />{{/router}}
+        <Router history={history} routes={routes} key={Math.random()} />{{/router}}
       </div>
     )
   }
