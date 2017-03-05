@@ -1,8 +1,11 @@
-import React, {Component} from 'react'
+import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import './MainView.css'
 
 export default class FooView extends Component {
+  static propTypes = {
+    children: PropTypes.element
+  }
   render () {
     return (
       <div className='main-view'>
