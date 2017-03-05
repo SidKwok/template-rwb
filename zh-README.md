@@ -42,7 +42,7 @@ npm run lint
 
 ## Doc
 
-该模版大部分参考了 [vue-cli/webpack](https://github.com/vuejs-templates/webpack/tree/master/docs) 的设计。 如果你对 `vue-cli` 很熟悉的话, 你应该会对该模版很快上手.
+该模版大部分参考了 [vue-cli/webpack](https://github.com/vuejs-templates/webpack/tree/master/docs) 的设计。 如果你对 `vue-cli` 很熟悉的话, 你应该会对该模版很快上手。如果想看模版的结构，可以直接在[`full-features`分支](https://github.com/SidKwok/react-webpack-boilerplate/tree/full-features)查看。
 
 ### Pre-Processor
 
@@ -104,6 +104,7 @@ anywhere
 * [x] hot-reload for redux
 * [ ] better structure for redux
 * [x] support redux-devtools-extension
+* [ ] 使用happypack让构建更快
 
 ## Known Issues
 

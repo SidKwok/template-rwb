@@ -42,7 +42,7 @@ npm run lint
 
 ## Doc
 
-It is pretty much the same config as [vue-cli/webpack](https://github.com/vuejs-templates/webpack/tree/master/docs). If you are familiar with `vue-cli`, you may have a great joy with this boilerplate.
+It is pretty much the same config as [vue-cli/webpack](https://github.com/vuejs-templates/webpack/tree/master/docs). If you are familiar with `vue-cli`, you may have a great joy with this boilerplate. If you want to have a peek of the structure, you can visit [`full-features` branch](https://github.com/SidKwok/react-webpack-boilerplate/tree/full-features).
 
 ### Pre-Processor
 
@@ -105,6 +105,7 @@ anywhere
 * [x] hot-reload for redux
 * [ ] better structure for redux
 * [x] support redux-devtools-extension
+* [ ] use happypack to make building process fly!
 
 ## Known Issues
 
