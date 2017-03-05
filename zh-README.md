@@ -108,4 +108,4 @@ anywhere
 ## Known Issues
 
 * 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。v4似乎不存在这个问题。
-* ~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~
+* ~~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~~
