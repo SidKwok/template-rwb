@@ -55,9 +55,10 @@ module.exports = {
     },
     filters: {
         'src/routes/**/*': 'router',
-        'src/views／**/*': 'router',
+        'src/views/**/*': 'router',
         'src/redux/**/*': 'redux',
-        'src/components/Counter/**/*': 'redux',
+        'src/components/Counter.jsx': 'redux',
+        'src/components/Counter.css': 'redux',
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint'
     },

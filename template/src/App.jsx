@@ -9,11 +9,7 @@ import routes from 'routes'
 {{/router}}
 {{#redux}}
 
-import { Provider } from 'react-redux'
 import Counter from 'components/Counter'
-import configureStore from '$redux/store/configureStore'
-
-const store = configureStore()
 {{/redux}}
 
 export default class App extends Component {
@@ -23,9 +19,7 @@ export default class App extends Component {
         <div className='App-header'>
           <img src={logo} className='App-logo shake-rotate' alt='logo' />
         </div>{{#redux}}
-        <Provider store={store}>
-          <Counter />
-        </Provider>{{/redux}}
+        <Counter />{{/redux}}
         <Hello />{{#router}}
         <Router history={history} routes={routes} key={Math.random()} />{{/router}}
       </div>
