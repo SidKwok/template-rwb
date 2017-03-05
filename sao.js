@@ -47,6 +47,22 @@ module.exports = {
             type: 'confirm',
             message: 'Install redux?'
         },
+        devtools: {
+            type: 'list',
+            message: 'Pick the type of DevTools',
+            choices: [
+                {
+                    name: 'Browser Extension',
+                    value: 'browser',
+                    short: 'Browser'
+                },
+                {
+                    name: 'Customized DevTools',
+                    value: 'normal',
+                    short: 'Normal'
+                }
+            ]
+        },
         lint: {
             type: 'confirm',
             message: 'Use ESLint to lint your code?',
@@ -59,6 +75,7 @@ module.exports = {
         'src/redux/**/*': 'redux',
         'src/components/Counter.jsx': 'redux',
         'src/components/Counter.css': 'redux',
+        'src/components/DevTools.jsx': 'devtools === "normal"',
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint'
     },

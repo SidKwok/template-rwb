@@ -15,7 +15,7 @@
  - **Proxy**
  - **Environmental value**
  - **ESlint**, 使用 [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) 和 [`standard-react`](https://github.com/feross/eslint-config-standard-react) 进行代码风格检查
- - **Redux-devtools**, 对 `store` 进行更加友好的调试
+ - **redux-devtools**, 对 `store` 进行更加友好的调试
 
 ## Usage
 
@@ -84,7 +84,9 @@ dev: {
 
 ### react-devtools
 
-该模版已经默认开启了devtool，但是如果要让其工作起来，你需要下载[相关的浏览器插件](https://github.com/zalmoxisus/redux-devtools-extension)。
+该模版已经默认开启了浏览器的`redux-devtool`，但是如果要让其工作起来，你需要下载[相关的浏览器插件](https://github.com/zalmoxisus/redux-devtools-extension)。
+
+你也可以选择 `Customized DevTools`， 这个是建立在页面里面的一个组件，你可以在代码里自定义你需要的devtool。在[这里](https://github.com/gaearon/redux-devtools)查看更多的选项。
 
 ### Production
 
@@ -105,6 +107,7 @@ anywhere
 * [ ] better structure for redux
 * [x] support redux-devtools-extension
 * [ ] 使用happypack让构建更快
+* [x] DevTools的选择：使用浏览器的还是自定义的
 
 ## Known Issues
 

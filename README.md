@@ -84,7 +84,9 @@ The boilerplate uses [react-hot-loader v3](https://github.com/gaearon/react-hot-
 
 ### react-devtools
 
-This boilerplate has enabled the devtools' config automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
+This boilerplate has enabled the `browser devtool` config automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
+
+You can also choose `Customized DevTools` which is built in your page. With this you can customized you own devtool. Click [here](https://github.com/gaearon/redux-devtools) to see more options.
 
 ### Production
 
@@ -106,6 +108,7 @@ anywhere
 * [ ] better structure for redux
 * [x] support redux-devtools-extension
 * [ ] use happypack to make building process fly!
+* [x] Choices of DevTools: browser extension or customized DevTools component
 
 ## Known Issues
 
