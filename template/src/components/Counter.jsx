@@ -1,7 +1,11 @@
 import React, { Component, PropTypes } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import * as CounterActions from '$redux/actions'
+
 import './Counter.css'
 
-export default class Counter extends Component {
+class Counter extends Component {
   static propTypes = {
     actions: PropTypes.object,
     'actions.increment': PropTypes.func,
@@ -21,3 +25,16 @@ export default class Counter extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  counter: state.counter
+})
+
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(CounterActions, dispatch)
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Counter)
