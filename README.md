@@ -2,6 +2,8 @@
 
 > A SPA boilerplate with React, built with love.
 
+<div align="center"><img width="400" src="screenshots.png" /></div>
+
 ## Features
  - **React 15.4.2**
  - **Redux 3.6.0**
