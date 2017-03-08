@@ -49,6 +49,7 @@ module.exports = {
         },
         devtools: {
             type: 'list',
+            when: 'redux',
             message: 'Pick the type of DevTools',
             choices: [
                 {

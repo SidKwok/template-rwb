@@ -1,29 +1,30 @@
-import { createStore{{#if_eq devtools "normal"}}, compose{{/if_eq}} } from 'redux'
+import { createStore, compose } from 'redux'
 import rootReducer from '../reducers/index'
 {{#if_eq devtools "normal"~}}
 import { persistState } from 'redux-devtools'
 import DevTools from 'components/DevTools'
 
+{{/if_eq}}
 const enhancer = compose(
+  {{#if_eq devtools "normal"~}}
   DevTools.instrument(),
   persistState(
     window.location.href.match(
       /[?&]debug_session=([^&#]+)\b/
     )
   )
+  {{/if_eq}}
+  {{#if_eq devtools "browser"}}
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  {{/if_eq}}
+  // you can apply you middleware here
 )
-{{/if_eq}}
 
 export default function configureStore (initialState) {
   const store = createStore(
     rootReducer,
     initialState,
-    {{#if_eq devtools "normal"}}
     enhancer
-    {{/if_eq}}
-    {{#if_eq devtools "browser"}}
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    {{/if_eq}}
   )
 
   if (module.hot) {

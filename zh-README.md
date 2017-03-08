@@ -84,7 +84,11 @@ dev: {
 
 [standard](https://github.com/feross/standard) 和 [standard-react](https://github.com/feross/standard-react) 是该模版默认的代码风格，你也可以在 `.eslintrc.js` 中使用自己喜爱的代码风格。
 
-### react-devtools
+### Redux
+
+你可以通过命令行开启`redux`选项来在项目中使用 **Redux** 。为了减少生产环境的代码体积，我们把两种不同环境的`store`(`dev` 和 `prod`)分离到了两个文件中。如果你需要使用**Redux**的中间件(`redux-thunk`, `redux-saga`...)，你需要同时在两个文件(`configureStore.dev.js` 和 `configureStore.prod.js`)中添加中间件，才能使两个不同环境都使用到相应的中间件。
+
+### redux-devtools
 
 该模版已经默认开启了浏览器的`redux-devtool`，但是如果要让其工作起来，你需要下载[相关的浏览器插件](https://github.com/zalmoxisus/redux-devtools-extension)。
 

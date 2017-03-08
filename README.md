@@ -84,9 +84,13 @@ The boilerplate uses [react-hot-loader v3](https://github.com/gaearon/react-hot-
 
 [standard](https://github.com/feross/standard) and [standard-react](https://github.com/feross/standard-react) are the default style guides for this boilerplate, feel free to edit your own config in `.eslintrc.js`.
 
-### react-devtools
+### Redux
 
-This boilerplate has enabled the `browser devtool` config automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
+You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` ones doesn't have any devtools' code, in order to reduce the size of bundle. If you need to apply the middleware (`redux-thunk`, `redux-saga` and so on), you need to apply them in two files (`configureStore.dev.js` and `configureStore.prod.js`) so that you can use the middlewares in two different environments.
+
+### redux-devtools
+
+This boilerplate has enabled the `browser devtool` config for **Redux** automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
 
 You can also choose `Customized DevTools` which is built in your page. With this you can customized you own devtool. Click [here](https://github.com/gaearon/redux-devtools) to see more options.
 
