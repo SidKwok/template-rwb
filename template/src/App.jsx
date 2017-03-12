@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import Hello from 'components/Hello'
 {{#router~}}
+{{#if_eq routerVersion "v3"~}}
 import { {{history}} as history, Router } from 'react-router'
+{{/if_eq}}
+{{#if_eq routerVersion "v4"~}}
+import { renderRoutes } from 'react-router-config'
+import { {{history}} as Router } from 'react-router-dom'
+{{/if_eq}}
 import routes from 'routes'
 {{/router}}
 {{#if_eq devtools "normal"~}}
@@ -23,8 +29,11 @@ export default class App extends Component {
         </div>{{#redux}}
         <Counter />{{/redux}}{{#if_eq devtools "normal"}}
         <DevTools />{{/if_eq}}
-        <Hello />{{#router}}
-        <Router history={history} routes={routes} key={Math.random()} />{{/router}}
+        <Hello />{{#router}}{{#if_eq routerVersion "v3"}}
+        <Router history={history} routes={routes} key={Math.random()} />{{/if_eq}}{{#if_eq routerVersion "v4"}}
+        <Router>
+          {renderRoutes(routes)}
+        </Router>{{/if_eq}}{{/router}}
       </div>
     )
   }

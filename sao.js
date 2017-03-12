@@ -32,14 +32,14 @@ module.exports = {
             type: 'list',
             choices: [
                 {
-                    name: 'v3',
-                    value: 'v3',
-                    short: 'v3'
-                },
-                {
                     name: 'v4',
                     value: 'v4',
                     short: 'v4'
+                },
+                {
+                    name: 'v3',
+                    value: 'v3',
+                    short: 'v3'
                 }
             ]
         },
@@ -50,12 +50,18 @@ module.exports = {
             choices: [
                 {
                     name: 'html5 history api',
-                    value: 'browserHistory',
+                    value: function(obj) {
+                        return obj.data.root.routerVersion === 'v3'
+                            ? 'browserHistory' : 'BrowserRouter';
+                    },
                     short: 'html5'
                 },
                 {
                     name: 'hash router',
-                    value: 'hashHistory',
+                    value: function(obj) {
+                        return obj.data.root.routerVersion === 'v3'
+                            ? 'hashHistory' : 'HashRouter';
+                    },
                     short: 'hash'
                 }
             ]
