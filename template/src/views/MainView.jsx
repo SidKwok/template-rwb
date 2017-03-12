@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import './MainView.css'
 
-export default class FooView extends Component {
+export default class MainView extends Component {
   static propTypes = {
     children: PropTypes.element
   }

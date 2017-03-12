@@ -73,7 +73,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"{{#router}},
-    "react-router": "^3.0.2"{{/router}}{{#redux}},
+    {{#if_eq router 'v3'}}"react-router": "^3.0.2"{{/if_eq}}{{#if_eq router 'v4'}}"react-router-dom": "^4.0.0"{{/if_eq}}{{/router}}{{#redux}},
     "react-redux": "^5.0.2",
     "redux": "^3.6.0"{{/redux}}
   },

@@ -26,6 +26,23 @@ module.exports = {
             message: 'Install react-router?',
             type: 'confirm'
         },
+        routerVersion: {
+            when: 'router',
+            message: 'Pick the version of router',
+            type: 'list',
+            choices: [
+                {
+                    name: 'v3',
+                    value: 'v3',
+                    short: 'v3'
+                },
+                {
+                    name: 'v4',
+                    value: 'v4',
+                    short: 'v4'
+                }
+            ]
+        },
         history: {
             when: 'router',
             type: 'list',
