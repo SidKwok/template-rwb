@@ -8,7 +8,7 @@
  - **React 15.4.2**
  - **Redux 3.6.0**
  - **react-redux 5.0.2**, 用来绑定 React 和 Redux.
- - **react-router 3.0.2**, 当v4发布稳定版本时, 会进行相关的更新
+ - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
  - **JSX**
  - **ES6**
  - **webpack 2.2**
@@ -61,12 +61,12 @@ npm install less less-loader --save-dev
 ```javascript
 ...
 dev: {
-    proxyTable: {
-        '/api': {
-            target: 'http://example.org',
-            changeOrigin: true
-        }
+  proxyTable: {
+    '/api': {
+      target: 'http://example.org',
+      changeOrigin: true
     }
+  }
 }
 ...
 ```
@@ -117,5 +117,5 @@ anywhere
 
 ## Known Issues
 
-* 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。v4似乎不存在这个问题。
+* 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。`v4`不存在这个问题。
 * ~~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~~

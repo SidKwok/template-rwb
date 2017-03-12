@@ -8,7 +8,7 @@
  - **React 15.4.2**
  - **Redux 3.6.0**
  - **react-redux 5.0.2**, to bind React and Redux.
- - **react-router 3.0.2**, will be updated to v4 whenever the version is stable.
+ - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**
  - **webpack 2.2**
@@ -61,12 +61,12 @@ For example, you want to proxy `/api/get-post` and `/api/get-id`, you can edit t
 ```javascript
 ...
 dev: {
-    proxyTable: {
-        '/api': {
-            target: 'http://example.org',
-            changeOrigin: true
-        }
+  proxyTable: {
+    '/api': {
+      target: 'http://example.org',
+      changeOrigin: true
     }
+  }
 }
 ...
 ```
@@ -118,6 +118,6 @@ anywhere
 
 ## Known Issues
 
-* When combine with `react-router`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24).
+* When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
 
 * ~~When combine with `Redux`, hot-reload will cause `<Provider> does not support changing `store` on the fly...` in the console, and break hot-reload in redux.~~
