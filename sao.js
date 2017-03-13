@@ -104,7 +104,7 @@ module.exports = {
         '.eslintignore': 'lint'
     },
     post({isNewFolder, folderName, chalk, install, init, answers}) {
-        console.log(chalk.blue('\n  To get started:\n'));
+        console.log(chalk.cyan('\n  To get started:\n'));
         if (isNewFolder) {
             console.log(`  cd ${folderName}`);
         }
@@ -112,14 +112,14 @@ module.exports = {
         console.log('  npm run dev');
 
         if (answers.redux === 'browser') {
-            console.log(chalk.blue('\n  To make redux-devtools-extension work:\n'));
+            console.log(chalk.cyan('\n  To make redux-devtools-extension work:\n'));
             console.log('  https://github.com/zalmoxisus/redux-devtools-extension');
         }
 
-        console.log(chalk.blue('\n  To build for production:\n'));
+        console.log(chalk.cyan('\n  To build for production:\n'));
         console.log('  npm run build');
 
-        console.log(chalk.blue('\n  Documentation:\n'));
+        console.log(chalk.cyan('\n  Documentation:\n'));
         console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
 
     }
