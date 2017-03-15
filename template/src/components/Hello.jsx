@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
 import './Hello.css'
 
-export default class App extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      msg: 'Hello World!'
-    }
+export default class Hello extends Component {
+  state = {
+    msg: 'Hello World!'
   }
   render () {
     return (
