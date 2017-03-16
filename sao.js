@@ -111,7 +111,7 @@ module.exports = {
         console.log('  npm install');
         console.log('  npm run dev');
 
-        if (answers.redux === 'browser') {
+        if (answers.devtools === 'browser') {
             console.log(chalk.cyan('\n  To make redux-devtools-extension work:\n'));
             console.log('  https://github.com/zalmoxisus/redux-devtools-extension');
         }

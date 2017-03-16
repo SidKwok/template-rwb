@@ -9,7 +9,7 @@
     "node",
     "spa"
   ],
-  "author": "{{ name }}",
+  "author": "{{ author }}",
   "license": "MIT",
   "scripts": {
     "dev": "node build/dev-server",
