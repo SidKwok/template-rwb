@@ -99,7 +99,7 @@ module.exports = {
         'src/redux/**/*': 'redux',
         'src/components/Counter.jsx': 'redux',
         'src/components/Counter.css': 'redux',
-        'src/components/DevTools/**/*': 'devtools === "normal"',
+        'src/components/DevTools/**/*': 'redux && devtools === "normal"',
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint'
     },
