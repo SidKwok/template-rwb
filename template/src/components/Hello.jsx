@@ -8,7 +8,7 @@ export default class Hello extends Component {
   render () {
     return (
       <div id='Hello'>
-        <div className='msg'>{this.state.msg}</div>
+        <h2>{this.state.msg}</h2>
         {{#redux}}
         <p className='doc'>
           <i className='redux'>Redux's</i> <a href='http://redux.js.org/' target='_blank'>doc</a>

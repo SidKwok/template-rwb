@@ -1,12 +1,12 @@
 .counter {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 88px;
+  height: 88px;
+  line-height: 88px;
   text-decoration: none;
   background-color: #7649bb;
   border-radius: 8px;
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 

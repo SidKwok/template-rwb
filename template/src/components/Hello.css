@@ -1,6 +1,7 @@
-#Hello .msg {
+#Hello h2 {
   color: #61dafb;
   font-size: 24px;
+  margin: 0;
 }
 #Hello .doc i {
   font-size: 20px;
