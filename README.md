@@ -18,6 +18,7 @@
  - **Environmental value**
  - **ESlint**, with [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) and [`standard-react`](https://github.com/feross/eslint-config-standard-react).
  - **Redux-devtools**, to make the stores more clear
+ - **bundle-analyzer**
 
 ## Usage
 
@@ -102,6 +103,18 @@ npm install -g anywhere # or others
 
 # in `./dist`
 anywhere
+```
+
+### bundle-analyzer
+
+We analyze the bundle content with [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer):
+
+![bundle-analyzer](/bundle_report.png)
+
+To get this out, please run:
+
+```bash
+npm run build --report
 ```
 
 ## TODO

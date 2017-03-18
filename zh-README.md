@@ -18,6 +18,7 @@
  - **Environmental value**
  - **ESlint**, 使用 [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) 和 [`standard-react`](https://github.com/feross/eslint-config-standard-react) 进行代码风格检查
  - **redux-devtools**, 对 `store` 进行更加友好的调试
+ - **bundle-analyzer**
 
 ## Usage
 
@@ -102,6 +103,18 @@ npm install -g anywhere # 或者其他静态服务器
 
 # 在 `./dist` 文件夹里
 anywhere
+```
+
+### bundle-analyzer
+
+我们使用  [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer) 来分析 bundle 的内容:
+
+![bundle-analyzer](/bundle_report.png)
+
+为了打印出分析结果，你需要使用以下命令：
+
+```bash
+npm run build --report
 ```
 
 ## TODO
