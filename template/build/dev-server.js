@@ -6,6 +6,7 @@ if (!process.env.NODE_ENV) {
 }
 
 const opn = require('opn');
+const chalk = require('chalk');
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
@@ -63,9 +64,11 @@ const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.asset
 app.use(staticPath, express.static('./static'));
 
 const uri = 'http://localhost:' + port;
+const ip = 'http://' + require('internal-ip').v4() + ':' + port;
 
 devMiddleware.waitUntilValid(function () {
-    console.log('> Listening at ' + uri + '\n');
+    console.log(chalk.cyan('- Local: ' + uri + '\n'));
+    console.log(chalk.cyan('- On your Network: ' + ip + '\n'));
 });
 
 module.exports = app.listen(port, function (err) {
