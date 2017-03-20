@@ -60,6 +60,28 @@ npm install less less-loader --save-dev
 ```
 然后，你就可以在你的组件里 `import` 你的 `less` 文件。
 
+### postcss-config
+
+我们默认使用[postcss](http://postcss.org/)，所以你可以用你需要的插件来丰富postcss。举个🌰，你要使用`postcss-color-gray`：
+```bash
+# First thing to do
+npm install postcss-color-gray --save-dev
+```
+
+在`postcssrc.js`添加你的插件：
+```javascript
+module.exports = {
+  "plugins": {
+    // to edit target browsers: use "browserlist" field in package.json
+    "autoprefixer": {},
+    // just put your plugin here
+    "postcss-color-gray": {}
+  }
+}
+```
+
+Tada! Everything is gray now.
+
 ### Proxy
 
 该模版使用 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)  来代理接口.
@@ -124,7 +146,7 @@ npm run build --report
 
 ### sourceMap
 
-通过sourceMap来获取更好的开发体验，但是我们在生产环境中默认关闭了sourceMap功能，因为基于安全问题用户有时候不应该直接在浏览器中获取你源代码的映射，但是你也可以在`config/index.js: productionSourceMap`中将其打开。
+通过sourceMap来获取更好的开发体验，但是我们在生产环境中默认关闭了sourceMap功能，因为基于安全问题用户有时候不应该直接在浏览器中获取你源代码的映射，同时也可以加快你的代码构建速度。但是你也可以在`config/index.js: productionSourceMap`中将其打开。
 
 ## TODO
 * [x] eslint

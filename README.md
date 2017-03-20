@@ -60,9 +60,31 @@ npm install less less-loader --save-dev
 ```
 Then, you can `import` your `less` files in your components.
 
+### postcss-config
+
+We use [postcss](http://postcss.org/) with autoprefixer by default. You can also use your own plugins in the project. For example, to use `postcss-color-gray` to "grayify" your color:
+```bash
+# First thing to do
+npm install postcss-color-gray --save-dev
+```
+
+add your plugin in `postcssrc.js`
+```javascript
+module.exports = {
+  "plugins": {
+    // to edit target browsers: use "browserlist" field in package.json
+    "autoprefixer": {},
+    // just put your plugin here
+    "postcss-color-gray": {}
+  }
+}
+```
+
+Tada! Everything is gray now.
+
 ### Proxy
 
-The boilerplate uses [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)  for proxying.
+We uses [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware)  for proxying.
 For example, you want to proxy `/api/get-post` and `/api/get-id`, you can edit the option in `config/index.js`:
 ```javascript
 ...
@@ -84,7 +106,7 @@ This [doc](https://github.com/vuejs-templates/webpack/blob/master/docs/env.md) c
 
 ### Hot-Reload
 
-The boilerplate uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next) to tweak React components, even for Redux! Have fun!
+We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next) to tweak React components, even for Redux! Have fun!
 
 ### ESlint
 
@@ -124,7 +146,7 @@ npm run build --report
 
 ### sourceMap
 
-You can have a better experience on debugging with sourceMap in your dev-server, but we disable it by default in production for others are not supposed to get your source code from the browser. Feel free to turn it on in `config/index.js: productionSourceMap`.
+You can have a better experience on debugging with sourceMap in your dev-server, but we disable it by default in production for others are not supposed to get your source code from the browser. It also can accelerate your building process. Feel free to turn it on in `config/index.js: productionSourceMap`.
 
 ## TODO
 
