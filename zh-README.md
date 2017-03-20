@@ -122,6 +122,10 @@ anywhere
 npm run build --report
 ```
 
+### sourceMap
+
+通过sourceMap来获取更好的开发体验，但是我们在生产环境中默认关闭了sourceMap功能，因为基于安全问题用户有时候不应该直接在浏览器中获取你源代码的映射，但是你也可以在`config/index.js: productionSourceMap`中将其打开。
+
 ## TODO
 * [x] eslint
 * [ ] unit test
@@ -137,3 +141,7 @@ npm run build --report
 
 * 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。`v4`不存在这个问题。
 * ~~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~~
+
+## Reference
+
+* [vue-cli/webpack](https://github.com/vuejs-templates/webpack)

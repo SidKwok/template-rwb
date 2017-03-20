@@ -122,6 +122,10 @@ To get this out, please run:
 npm run build --report
 ```
 
+### sourceMap
+
+You can have a better experience on debugging with sourceMap in your dev-server, but we disable it by default in production for others are not supposed to get your source code from the browser. Feel free to turn it on in `config/index.js: productionSourceMap`.
+
 ## TODO
 
 * [x] eslint
