@@ -1,6 +1,6 @@
 # react-webpack-boilerplate
 
-> This branch is the template with full features
+> A React project
 
 ## Usage
 
@@ -14,6 +14,4 @@ npm run dev
 # production
 npm run build
 
-# lint the files
-npm run lint
 ```

@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux'
-import configureStore from '$redux/store/configureStore'
-
-const store = configureStore()
+import store from '$redux/store'
 
 const render = Component => {
   ReactDOM.render(

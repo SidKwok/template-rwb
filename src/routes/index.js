@@ -8,11 +8,11 @@ export default [
     component: MainView,
     childRoutes: [
       {
-        path: 'foo',
+        path: '/foo',
         component: FooView
       },
       {
-        path: 'bar',
+        path: '/bar',
         component: BarView
       }
     ]

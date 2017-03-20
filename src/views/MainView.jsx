@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react'
-import { Link } from 'react-router'
+import { renderRoutes } from 'react-router-config'
+import { NavLink as Link } from 'react-router-dom'
 import './MainView.css'
 
-export default class FooView extends Component {
+export default class MainView extends Component {
   static propTypes = {
-    children: PropTypes.element
+    route: PropTypes.object
   }
   render () {
     return (
@@ -14,7 +15,7 @@ export default class FooView extends Component {
           <Link to='/bar' className='btn' activeClassName='active'>To Bar</Link>
         </div>
         <div className='view'>
-          {this.props.children}
+          {renderRoutes(this.props.route.childRoutes)}
         </div>
       </div>
     )

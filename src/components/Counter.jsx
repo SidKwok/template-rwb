@@ -8,9 +8,7 @@ import './Counter.css'
 class Counter extends Component {
   static propTypes = {
     actions: PropTypes.object,
-    'actions.increment': PropTypes.func,
-    counter: PropTypes.object,
-    'counter.count': PropTypes.number
+    counter: PropTypes.object
   }
   handleClick = () => {
     this.props.actions.increment()
