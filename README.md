@@ -21,7 +21,7 @@
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**
  - **Environmental value**
- - **ESlint**, with [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) and [`standard-react`](https://github.com/feross/eslint-config-standard-react).
+ - ~~**ESlint**, with [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) and [`standard-react`](https://github.com/feross/eslint-config-standard-react).~~
  - **Redux-devtools**, to make the stores more clear
  - **bundle-analyzer**
 
@@ -110,7 +110,7 @@ We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/n
 
 ### ESlint
 
-[standard](https://github.com/feross/standard) and [standard-react](https://github.com/feross/standard-react) are the default style guides for this boilerplate, feel free to edit your own config in `.eslintrc.js`.
+~~[standard](https://github.com/feross/standard) and [standard-react](https://github.com/feross/standard-react) are the default style guides for this boilerplate, feel free to edit your own config in `.eslintrc.js`.~~
 
 ### Redux
 
@@ -165,6 +165,8 @@ You can have a better experience on debugging with sourceMap in your dev-server,
 * When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
 
 * ~~When combine with `Redux`, hot-reload will cause `<Provider> does not support changing `store` on the fly...` in the console, and break hot-reload in redux.~~
+
+* eslint was not able to work for now
 
 ## Reference
 

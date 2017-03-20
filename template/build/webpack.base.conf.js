@@ -35,15 +35,16 @@ module.exports = {
     module: {
         rules: [
             {{#lint}}
-            {
-                test: /\.jsx?$/,
-                loader: 'eslint-loader',
-                enforce: 'pre',
-                include: [resolve('src'), resolve('test')],
-                options: {
-                    formatter: require('eslint-friendly-formatter')
-                }
-            },
+            // disable eslint for the rules was buggy now
+            // {
+            //     test: /\.jsx?$/,
+            //     loader: 'eslint-loader',
+            //     enforce: 'pre',
+            //     include: [resolve('src'), resolve('test')],
+            //     options: {
+            //         formatter: require('eslint-friendly-formatter')
+            //     }
+            // },
             {{/lint}}
             {
                 test: /\.jsx?$/,
