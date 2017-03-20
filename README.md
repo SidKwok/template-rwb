@@ -139,3 +139,7 @@ npm run build --report
 * When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
 
 * ~~When combine with `Redux`, hot-reload will cause `<Provider> does not support changing `store` on the fly...` in the console, and break hot-reload in redux.~~
+
+## Reference
+
+* [vue-cli/webpack](https://github.com/vuejs-templates/webpack)
