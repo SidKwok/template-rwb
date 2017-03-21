@@ -21,7 +21,7 @@
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
  - **Environmental value**
- - ~~**ESlint**, 使用 [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) 和 [`standard-react`](https://github.com/feross/eslint-config-standard-react) 进行代码风格检查~~
+ - **ESlint**, 使用 [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) 和 [`standard-react`](https://github.com/feross/eslint-config-standard-react) 进行代码风格检查
  - **redux-devtools**, 对 `store` 进行更加友好的调试
  - **bundle-analyzer**
 
@@ -165,7 +165,7 @@ npm run build --report
 
 * ~~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~~
 
-* 由于配置和`eslint-plugin-react`的bug的原因，eslint暂时无法使用。
+* ~~由于配置和`eslint-plugin-react@6.10.2`的bug的原因，eslint暂时无法使用。~~
 
 ## Reference
 
