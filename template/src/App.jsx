@@ -29,7 +29,7 @@ export default class App extends Component {
         </div>{{#redux}}
         <Counter />{{/redux}}{{#if_eq devtools "normal"}}
         <DevTools />{{/if_eq}}
-        <Hello />{{#router}}{{#if_eq routerVersion "v3"}}
+        <Hello msg='Hello World' />{{#router}}{{#if_eq routerVersion "v3"}}
         <Router history={history} routes={routes} key={Math.random()} />{{/if_eq}}{{#if_eq routerVersion "v4"}}
         <Router>
           {renderRoutes(routes)}

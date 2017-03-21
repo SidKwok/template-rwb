@@ -12,7 +12,7 @@
 ## Features
  - **React 15.4.2**
  - **Redux 3.6.0**
- - **react-redux 5.0.2**, to bind React and Redux.
+ - **react-redux 5.0.3**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**
@@ -151,7 +151,7 @@ You can have a better experience on debugging with sourceMap in your dev-server,
 ## TODO
 
 * [x] eslint
-* [ ] unit test
+* [ ] unit test with jest
 * [ ] e2e test
 * [x] **Redux** comming soon!
 * [x] hot-reload for redux

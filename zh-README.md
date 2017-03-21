@@ -12,7 +12,7 @@
 ## Features
  - **React 15.4.2**
  - **Redux 3.6.0**
- - **react-redux 5.0.2**, 用来绑定 React 和 Redux.
+ - **react-redux 5.0.3**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
  - **JSX**
  - **ES6**
@@ -150,7 +150,7 @@ npm run build --report
 
 ## TODO
 * [x] eslint
-* [ ] unit test
+* [ ] unit test with jest
 * [ ] e2e test
 * [x] **Redux** comming soon!
 * [x] hot-reload for redux
