@@ -74,7 +74,7 @@ module.exports = {
   "plugins": {
     // to edit target browsers: use "browserlist" field in package.json
     "autoprefixer": {},
-    // just put your plugin here
+    // put your plugin here
     "postcss-color-gray": {}
   }
 }
