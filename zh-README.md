@@ -46,6 +46,9 @@ npm run build
 
 # 检查文件代码风格 (如果有使用 eslint 的话)
 npm run lint
+
+# 运行测试
+npm run test
 ```
 
 ## Doc
@@ -148,9 +151,13 @@ npm run build --report
 
 通过sourceMap来获取更好的开发体验，但是我们在生产环境中默认关闭了sourceMap功能，因为基于安全问题用户有时候不应该直接在浏览器中获取你源代码的映射，同时也可以加快你的代码构建速度。但是你也可以在`config/index.js: productionSourceMap`中将其打开。
 
+### Unit test with jest
+
+我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./__tests__`里头。
+
 ## TODO
 * [x] eslint
-* [ ] unit test with jest
+* [x] unit test with jest
 * [ ] e2e test
 * [x] **Redux** comming soon!
 * [x] hot-reload for redux

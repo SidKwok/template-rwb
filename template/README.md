@@ -18,4 +18,9 @@ npm run build
 # lint the files
 npm run lint
 {{/lint}}
+
+{{#unit}}
+# run the tests
+npm run test
+{{/unit}}
 ```

@@ -4,7 +4,10 @@ import { shallow } from 'enzyme'
 
 describe('<Hello />', () => {
   it('should pass the prop correctly', () => {
-    const str = 'Hello World'
-    expect(shallow(<Hello msg={str} />).instance().props.msg).toEqual(str)
+    const msg = 'Hello World'
+    const wrapper = shallow(<Hello msg={msg} />)
+    expect(wrapper.containsMatchingElement(
+      <h2>{msg}</h2>
+    )).toEqual(true)
   })
 })

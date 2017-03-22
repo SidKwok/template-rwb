@@ -46,6 +46,9 @@ npm run build
 
 # lint the files (if use eslint)
 npm run lint
+
+# run all tests
+npm run test
 ```
 
 ## Doc
@@ -148,10 +151,14 @@ npm run build --report
 
 You can have a better experience on debugging with sourceMap in your dev-server, but we disable it by default in production for others are not supposed to get your source code from the browser. It also can make your building process faster. Feel free to turn it on in `config/index.js: productionSourceMap`.
 
+### Unit test with jest
+
+We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./__tests__`.
+
 ## TODO
 
 * [x] eslint
-* [ ] unit test with jest
+* [x] unit test with jest
 * [ ] e2e test
 * [x] **Redux** comming soon!
 * [x] hot-reload for redux
