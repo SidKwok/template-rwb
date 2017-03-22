@@ -91,6 +91,11 @@ module.exports = {
             type: 'confirm',
             message: 'Use ESLint to lint your code?',
             short: 'Standard'
+        },
+        unit: {
+            type: 'confirm',
+            message: 'Unit test with jest?',
+            short: 'Jest'
         }
     },
     filters: {
@@ -101,7 +106,9 @@ module.exports = {
         'src/components/Counter.css': 'redux',
         'src/components/DevTools/**/*': 'redux && devtools === "normal"',
         '.eslintrc.js': 'lint',
-        '.eslintignore': 'lint'
+        '.eslintignore': 'lint',
+        '__mocks__/**/*': 'unit',
+        '__tests__/**/*': 'unit'
     },
     post({isNewFolder, folderName, chalk, install, init, answers}) {
         console.log(chalk.cyan('\n  To get started:\n'));
