@@ -24,6 +24,7 @@
  - **ESlint**, with [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) and [`standard-react`](https://github.com/feross/eslint-config-standard-react).
  - **Redux-devtools**, to make the stores more clear
  - **bundle-analyzer**
+ - **jest** with Enzyme, to make unit test for react components easier.
 
 ## Usage
 

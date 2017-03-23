@@ -24,6 +24,7 @@
  - **ESlint**, 使用 [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) 和 [`standard-react`](https://github.com/feross/eslint-config-standard-react) 进行代码风格检查
  - **redux-devtools**, 对 `store` 进行更加友好的调试
  - **bundle-analyzer**
+ - **jest** 配合Enzyme，让React组件更加容易测试。
 
 ## Usage
 
