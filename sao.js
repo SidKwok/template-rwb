@@ -107,8 +107,8 @@ module.exports = {
         'src/components/DevTools/**/*': 'redux && devtools === "normal"',
         '.eslintrc.js': 'lint',
         '.eslintignore': 'lint',
-        '__mocks__/**/*': 'unit',
-        '__tests__/**/*': 'unit'
+        'test/**/*': 'unit',
+        'test/unit/.eslintrc': 'lint'
     },
     post({isNewFolder, folderName, chalk, install, init, answers}) {
         console.log(chalk.cyan('\n  To get started:\n'));
