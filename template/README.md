@@ -21,6 +21,6 @@ npm run lint
 
 {{#unit}}
 # run the tests
-npm run test
+npm test
 {{/unit}}
 ```

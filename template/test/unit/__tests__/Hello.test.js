@@ -1,5 +1,5 @@
 import React from 'react'
-import Hello from '../../../src/components/Hello.jsx'
+import Hello from 'src/components/Hello.jsx'
 import { shallow } from 'enzyme'
 
 describe('<Hello />', () => {

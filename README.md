@@ -49,7 +49,7 @@ npm run build
 npm run lint
 
 # run all tests
-npm run test
+npm test
 ```
 
 ## Doc

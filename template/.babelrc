@@ -13,7 +13,14 @@
             ]
         }{{#unit}},
         "test": {
-            "presets": ["env"]
+            "presets": ["env"],
+            "plugins": [
+                ["module-resolver", {
+                    "alias": {
+                        "src": "./src"
+                    }
+                }]
+            ]
         }{{/unit}}
     }
 }

@@ -49,7 +49,7 @@ npm run build
 npm run lint
 
 # 运行测试
-npm run test
+npm test
 ```
 
 ## Doc
