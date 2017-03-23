@@ -14,7 +14,7 @@
   "scripts": {
     "dev": "node build/dev-server",
     "build": "node build/build.js"{{#lint}},
-    "lint": "eslint --ext .js,.jsx src"{{/lint}}{{#unit}},
+    "lint": "eslint --ext .js,.jsx src{{#unit}} test{{/unit}}"{{/lint}}{{#unit}},
     "test": "jest"{{/unit}}
   },
   "devDependencies": {
