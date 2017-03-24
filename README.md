@@ -156,18 +156,6 @@ You can have a better experience on debugging with sourceMap in your dev-server,
 
 We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./__tests__`.
 
-## TODO
-
-* [x] eslint
-* [x] unit test with jest
-* [ ] e2e test
-* [x] **Redux** comming soon!
-* [x] hot-reload for redux
-* [ ] better structure for redux
-* [x] support redux-devtools-extension
-* [ ] use happypack to make building process fly!
-* [x] Choices of DevTools: browser extension or customized DevTools component
-
 ## Known Issues
 
 * When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.

@@ -156,17 +156,6 @@ npm run build --report
 
 我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./__tests__`里头。
 
-## TODO
-* [x] eslint
-* [x] unit test with jest
-* [ ] e2e test
-* [x] **Redux** comming soon!
-* [x] hot-reload for redux
-* [ ] better structure for redux
-* [x] support redux-devtools-extension
-* [ ] 使用happypack让构建更快
-* [x] DevTools的选择：使用浏览器的还是自定义的
-
 ## Known Issues
 
 * 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。`v4`不存在这个问题。
