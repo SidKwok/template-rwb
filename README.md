@@ -16,7 +16,7 @@
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**
- - **webpack 2.2**
+ - **webpack 2.3**
  - **Express**, the dev-server.
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**

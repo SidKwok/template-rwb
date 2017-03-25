@@ -16,7 +16,7 @@
  - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
  - **JSX**
  - **ES6**
- - **webpack 2.2**
+ - **webpack 2.3**
  - **Express**, 测试服务器
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
