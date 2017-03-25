@@ -136,6 +136,8 @@ npm install -g anywhere # or others
 anywhere
 ```
 
+And we use [react-optimize](https://github.com/thejameskyle/babel-react-optimize) to optimize your production code.
+
 ### bundle-analyzer
 
 We analyze the bundle content with [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer):
