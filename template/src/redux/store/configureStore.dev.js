@@ -6,7 +6,7 @@ import DevTools from 'components/DevTools'
 
 {{/if_eq}}
 const enhancer = compose(
-  {{#if_eq devtools "normal"~}}
+  {{#if_eq devtools "normal"}}
   DevTools.instrument(),
   persistState(
     window.location.href.match(
