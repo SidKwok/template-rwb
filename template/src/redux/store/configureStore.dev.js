@@ -1,11 +1,13 @@
 import { createStore, compose } from 'redux'
 import rootReducer from '../reducers/index'
+import middlewares from './middlewares'
 {{#if_eq devtools "normal"~}}
 import { persistState } from 'redux-devtools'
 import DevTools from 'components/DevTools'
 
 {{/if_eq}}
 const enhancer = compose(
+  middlewares,
   {{#if_eq devtools "normal"}}
   DevTools.instrument(),
   persistState(
@@ -17,7 +19,6 @@ const enhancer = compose(
   {{#if_eq devtools "browser"}}
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   {{/if_eq}}
-  // you can apply you middleware here
 )
 
 export default function configureStore (initialState) {
