@@ -118,7 +118,7 @@ dev: {
 
 ### Redux
 
-你可以通过命令行开启`redux`选项来在项目中使用 **Redux** 。为了减少生产环境的代码体积，我们把两种不同环境的`store`(`dev` 和 `prod`)分离到了两个文件中。如果你需要使用**Redux**的中间件(`redux-thunk`, `redux-saga`...)，你只需要`middlewares.js`中添加相应的中间件即可。
+你可以通过命令行开启`redux`选项来在项目中使用 **Redux** 。为了减少生产环境的代码体积，我们把两种不同环境的`store`(`dev` 和 `prod`)分离到了两个文件中。如果你需要使用**Redux**的中间件(`redux-thunk`, `redux-saga`...)，你只需要在`middlewares.js`中添加相应的中间件。
 
 ### redux-devtools
 

@@ -6,20 +6,22 @@ import { persistState } from 'redux-devtools'
 import DevTools from 'components/DevTools'
 
 {{/if_eq}}
+{{#if_eq devtools "browser"}}
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+
+const enhancer = composeEnhancers(middlewares)
+{{/if_eq}}
+{{#if_eq devtools "normal"}}
 const enhancer = compose(
   middlewares,
-  {{#if_eq devtools "normal"}}
   DevTools.instrument(),
   persistState(
     window.location.href.match(
       /[?&]debug_session=([^&#]+)\b/
     )
   )
-  {{/if_eq}}
-  {{#if_eq devtools "browser"}}
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  {{/if_eq}}
 )
+{{/if_eq}}
 
 export default function configureStore (initialState) {
   const store = createStore(

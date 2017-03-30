@@ -118,7 +118,7 @@ We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/n
 
 ### Redux
 
-You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` ones doesn't have any devtools' code, for reducing the size of bundle. If you need to apply the middleware (`redux-thunk`, `redux-saga` and so on), you need to apply them in `middlewares.js` and they will work both in your `dev` and `prod`.
+You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` ones doesn't have any devtools' code, for reducing the size of bundle. If you need to apply the middleware (`redux-thunk`, `redux-saga` and so on), you need to apply them in `middlewares.js`.
 
 ### redux-devtools
 
