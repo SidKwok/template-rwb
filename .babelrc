@@ -8,8 +8,19 @@
     "plugins": ["transform-runtime", "transform-class-properties"],
     "env": {
         "development": {
+            "plugins": ["react-hot-loader/babel"]
+        },
+        "production": {
+            "presets": ["react-optimize"]
+        },
+        "test": {
+            "presets": ["env"],
             "plugins": [
-                "react-hot-loader/babel"
+                ["module-resolver", {
+                    "alias": {
+                        "src": "./src"
+                    }
+                }]
             ]
         }
     }

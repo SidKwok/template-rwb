@@ -30,6 +30,7 @@ let webpackConfig = merge(baseWebpackConfig, {
             compress: {
                 warnings: false
             },
+            comments: false,
             sourceMap: true
         }),
         // extract css into its own file

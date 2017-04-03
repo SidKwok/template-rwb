@@ -18,7 +18,7 @@ export default class App extends Component {
         </div>
         <Counter />
         <DevTools />
-        <Hello />
+        <Hello msg='Hello World' />
         <Router>
           {renderRoutes(routes)}
         </Router>

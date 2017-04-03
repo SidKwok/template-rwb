@@ -14,4 +14,9 @@ npm run dev
 # production
 npm run build
 
+# lint the files
+npm run lint
+
+# run the tests
+npm test
 ```
