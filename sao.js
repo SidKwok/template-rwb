@@ -3,10 +3,8 @@ module.exports = {
     templateOptions: {
         helpers: {
             if_eq: function(a, b, opts) {
-                return a === b
-                    ? opts.fn(this)
-                    : opts.inverse(this);
-                }
+                return a === b ? opts.fn(this) : opts.inverse(this);
+            }
         }
     },
     prompts: {
@@ -52,7 +50,8 @@ module.exports = {
                     name: 'html5 history api',
                     value: function(obj) {
                         return obj.data.root.routerVersion === 'v3'
-                            ? 'browserHistory' : 'BrowserRouter';
+                            ? 'browserHistory'
+                            : 'BrowserRouter';
                     },
                     short: 'html5'
                 },
@@ -60,7 +59,8 @@ module.exports = {
                     name: 'hash router',
                     value: function(obj) {
                         return obj.data.root.routerVersion === 'v3'
-                            ? 'hashHistory' : 'HashRouter';
+                            ? 'hashHistory'
+                            : 'HashRouter';
                     },
                     short: 'hash'
                 }
@@ -110,7 +110,7 @@ module.exports = {
         'test/**/*': 'unit',
         'test/unit/.eslintrc': 'lint'
     },
-    post({isNewFolder, folderName, chalk, install, init, answers}) {
+    post({ isNewFolder, folderName, chalk, install, init, answers }) {
         console.log(chalk.cyan('\n  To get started:\n'));
         if (isNewFolder) {
             console.log(`  cd ${folderName}`);
@@ -119,8 +119,12 @@ module.exports = {
         console.log('  npm run dev');
 
         if (answers.devtools === 'browser') {
-            console.log(chalk.cyan('\n  To make redux-devtools-extension work:\n'));
-            console.log('  https://github.com/zalmoxisus/redux-devtools-extension');
+            console.log(
+                chalk.cyan('\n  To make redux-devtools-extension work:\n')
+            );
+            console.log(
+                '  https://github.com/zalmoxisus/redux-devtools-extension'
+            );
         }
 
         console.log(chalk.cyan('\n  To build for production:\n'));
@@ -128,6 +132,5 @@ module.exports = {
 
         console.log(chalk.cyan('\n  Documentation:\n'));
         console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
-
     }
 };
