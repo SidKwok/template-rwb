@@ -156,8 +156,7 @@ You can have a better experience on debugging with sourceMap in your dev-server,
 
 ### Unit test with jest
 
-We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./__tests__`.
-
+We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./__tests__`. And you need you create the files named `your-js(x)-file.test.js`, or other files will not use for test. But you can set your own rules in `package.json`.
 ## Known Issues
 
 * When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.

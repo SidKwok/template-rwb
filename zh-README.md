@@ -156,7 +156,7 @@ npm run build --report
 
 ### Unit test with jest
 
-我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./__tests__`里头。
+我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./__tests__`里头，而且测试文件应该遵循`your-js(x)-file.test.js`，否则不会被检测到。或者你可以在`package.json`里面设置你自己的检测规则。
 
 ## Known Issues
 
