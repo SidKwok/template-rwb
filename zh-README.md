@@ -1,6 +1,6 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E15.4.2-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E15.5.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.6.0-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E2.3.2-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
@@ -10,7 +10,7 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 15.4.2**
+ - **React 15.5.1**
  - **Redux 3.6.0**
  - **react-redux 5.0.3**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 选择你喜欢的路由吧！

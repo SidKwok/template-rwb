@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 {{#if_eq routerVersion "v3"~}}
 import { Link } from 'react-router'
 {{/if_eq}}
