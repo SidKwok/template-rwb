@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/react-%5E15.5.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.6.0-brightgreen.svg)
-![webpack](https://img.shields.io/badge/webpack-%5E2.3.2-brightgreen.svg)
+![webpack](https://img.shields.io/badge/webpack-%5E2.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
 > A SPA boilerplate with React, built with love.
@@ -16,7 +16,7 @@
  - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
  - **JSX**
  - **ES6**
- - **webpack 2.3**
+ - **webpack 2.x**
  - **Express**, 测试服务器
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
