@@ -45,6 +45,9 @@ npm run dev
 # 生产环境
 npm run build
 
+# 查看report
+npm run build --report
+
 # 检查文件代码风格 (如果有使用 eslint 的话)
 npm run lint
 
