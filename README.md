@@ -15,7 +15,7 @@
  - **react-redux 5.0.3**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
- - **ES6**
+ - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) by default.
  - **webpack 2.x**
  - **Express**, the dev-server.
  - **Hot-Reload**, support both React and Redux!

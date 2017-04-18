@@ -15,7 +15,7 @@
  - **react-redux 5.0.3**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
  - **JSX**
- - **ES6**
+ - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案
  - **webpack 2.x**
  - **Express**, 测试服务器
  - **Hot-Reload**, 支持 React 和 Redux!
