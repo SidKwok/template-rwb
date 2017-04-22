@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { renderRoutes } from 'react-router-config'
 import { NavLink as Link } from 'react-router-dom'
 import './MainView.css'

@@ -1,11 +1,11 @@
 {
     "presets": [
         ["env", {"modules": false}],
-        "stage-3",
+        "stage-1",
         "react"
     ],
     "comments": false,
-    "plugins": ["transform-runtime", "transform-class-properties"],
+    "plugins": ["transform-runtime"],
     "env": {
         "development": {
             "plugins": ["react-hot-loader/babel"]
