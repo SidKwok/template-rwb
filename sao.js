@@ -100,6 +100,7 @@ module.exports = {
     },
     filters: {
         'src/routes/**/*': 'router',
+        'src/routes/asyncRoute.js': 'router && routerVersion === "v4"',
         'src/views/**/*': 'router',
         'src/redux/**/*': 'redux',
         'src/components/Counter.jsx': 'redux',

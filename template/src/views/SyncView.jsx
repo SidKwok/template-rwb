@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export default class FooView extends Component {
+export default class SyncView extends Component {
   state = {
-    name: 'foo'
+    name: 'Sync'
   }
   render () {
     return (
       <p>
-        I'm {this.state.name}.
+        I'm {this.state.name} View.
       </p>
     )
   }

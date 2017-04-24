@@ -119,6 +119,10 @@ We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/n
 
 [standard](https://github.com/feross/standard) and [standard-react](https://github.com/feross/standard-react) are the default style guides for this boilerplate, feel free to edit your own config in `.eslintrc.js`.
 
+### Router
+
+You can use v3 or v4 as your router, and both of them support async router! As for v4, based on its concept(everything should be components, even for configs), it's a little tricky on using async router. To solve this issue, we use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-order Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
+
 ### Redux
 
 You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` ones doesn't have any devtools' code, for reducing the size of bundle. If you need to apply the middleware (`redux-thunk`, `redux-saga` and so on), you need to apply them in `middlewares.js`.

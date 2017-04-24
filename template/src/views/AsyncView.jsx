@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export default class BarView extends Component {
+export default class AsyncView extends Component {
   state = {
-    name: 'bar'
+    name: 'Async'
   }
   render () {
     return (
       <p>
-        I'm {this.state.name}.
+        I'm {this.state.name} View.
       </p>
     )
   }

@@ -18,8 +18,8 @@ export default class MainView extends Component {
     return (
       <div className='main-view'>
         <div className='btn-group'>
-          <Link to='/foo' className='btn' activeClassName='active'>To Foo</Link>
-          <Link to='/bar' className='btn' activeClassName='active'>To Bar</Link>
+          <Link to='/sync' className='btn' activeClassName='active'>To Sync</Link>
+          <Link to='/async' className='btn' activeClassName='active'>To Async</Link>
         </div>
         <div className='view'>{{#if_eq routerVersion "v3"}}
           {this.props.children}{{/if_eq}}{{#if_eq routerVersion "v4"}}

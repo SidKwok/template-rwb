@@ -13,7 +13,7 @@
  - **React 15.5.1**
  - **Redux 3.6.0**
  - **react-redux 5.0.3**, 用来绑定 React 和 Redux.
- - **react-router v4 或者 v3**, 选择你喜欢的路由吧！
+ - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
  - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案
  - **webpack 2.x**
@@ -118,6 +118,10 @@ dev: {
 ### ESlint
 
 [standard](https://github.com/feross/standard) 和 [standard-react](https://github.com/feross/standard-react) 是该模版默认的代码风格，你也可以在 `.eslintrc.js` 中使用自己喜爱的代码风格。
+
+### Router
+
+可以选择v3或者是v4作为你的路由，而且两个都支持异步路由。对于v4来说，由于其理念的问题，使用异步路由是有点麻烦的，所以在这里使用了 [`react-loadable`](https://github.com/thejameskyle/react-loadable) 对路由进行拆分。这是一个十分优秀的异步拆分高阶组件，它对react的拆分程度不仅仅在于路由，甚至可以细粒度到每一个组件。至于怎么使用比较舒服大家见仁见智啦。
 
 ### Redux
 
