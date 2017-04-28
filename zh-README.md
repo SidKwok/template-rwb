@@ -143,8 +143,6 @@ npm install -g anywhere # 或者其他静态服务器
 anywhere
 ```
 
-我们使用[react-optimize](https://github.com/thejameskyle/babel-react-optimize)来让你的生产环境代码更小。当你项目代码量很大的时候，效果会更加明显。
-
 ### bundle-analyzer
 
 我们使用  [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer) 来分析 bundle 的内容:

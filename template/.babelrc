@@ -9,9 +9,6 @@
     "env": {
         "development": {
             "plugins": ["react-hot-loader/babel"]
-        },
-        "production": {
-            "presets": ["react-optimize"]
         }{{#unit}},
         "test": {
             "presets": ["env"],
