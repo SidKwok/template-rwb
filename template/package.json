@@ -33,7 +33,7 @@
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
-    "eslint-config-standard-react": "^4.3.0",
+    "eslint-config-standard-react": "^5.0.0",
     {{#unit}}
     "eslint-plugin-jest": "^19.0.1",
     {{/unit}}
@@ -89,7 +89,7 @@
     "react-router-config": "^1.0.0-beta.3",
     "react-loadable": "^3.3.1",
     "react-router-dom": "^4.1.1"{{/if_eq}}{{/router}}{{#redux}},
-    "react-redux": "^5.0.3",
+    "react-redux": "^5.0.4",
     "redux": "^3.6.0"{{/redux}}
   },
   "engines": {
