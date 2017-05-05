@@ -11,7 +11,7 @@
             "plugins": ["react-hot-loader/babel"]
         }{{#unit}},
         "test": {
-            "presets": ["env"],
+            "presets": ["env", "stage-1"],
             "plugins": [
                 ["module-resolver", {
                     "alias": {
