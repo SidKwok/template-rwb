@@ -36,6 +36,7 @@ npm install -g sao
 sao SidKwok/react-webpack-boilerplate new-project --install
 
 # if you would like to try React 16
+# noted that it is not stable yet
 sao SidKwok/react-webpack-boilerplate#next new-project --install
 
 # install all this dependencies.
