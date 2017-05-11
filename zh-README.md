@@ -137,10 +137,13 @@ dev: {
 
 生产环境的文件(也就是dist里的文件)是适用于真实的server的，所以你不应该直接访问`index.html`。如果要对dist内的文件进行测试，你可以使用静态服务器：
 ```bash
-npm install -g anywhere # 或者其他静态服务器
+npm install -g serve # 或者其他静态服务器
 
 # 在 `./dist` 文件夹里
-anywhere
+serve
+
+# 若使用了react-router
+serve -s
 ```
 
 ### bundle-analyzer
@@ -155,13 +158,13 @@ anywhere
 npm run build --report
 ```
 
-### sourceMap
+### Source Map
 
 通过sourceMap来获取更好的开发体验，但是我们在生产环境中默认关闭了sourceMap功能，因为基于安全问题用户有时候不应该直接在浏览器中获取你源代码的映射，同时也可以加快你的代码构建速度。但是你也可以在`config/index.js: productionSourceMap`中将其打开。
 
 ### Unit test with jest
 
-我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./__tests__`里头，而且测试文件应该遵循`your-js(x)-file.test.js`，否则不会被检测到。或者你可以在`package.json`里面设置你自己的检测规则。
+我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./test/unit/__tests__`里头，而且测试文件应该遵循`your-js(x)-file.test.js`，否则不会被检测到。或者你可以在`package.json`里面设置你自己的检测规则。
 
 ## Known Issues
 

@@ -116,7 +116,7 @@ This [doc](https://github.com/vuejs-templates/webpack/blob/master/docs/env.md) c
 
 ### Hot-Reload
 
-We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next) to tweak React components, even for Redux! Have fun!
+We use [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next) to tweak React components, even for Redux! Have fun!
 
 ### ESlint
 
@@ -124,26 +124,29 @@ We uses [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/n
 
 ### Router
 
-You can use v3 or v4 as your router, and both of them support async router! As for v4, based on its concept(everything should be components, even for configs), it's a little tricky on using async router. To solve this issue, we use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-order Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
+You can use v3 or v4 as your router, and both of them support async router! As for v4, based on its concept(everything should be component, even for config), it's a little tricky on using async router. To solve this issue, we use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
 
 ### Redux
 
-You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` ones doesn't have any devtools' code, for reducing the size of bundle. If you need to apply the middleware (`redux-thunk`, `redux-saga` and so on), you need to apply them in `middlewares.js`.
+You can use **Redux** in the project when you enable the choice. Noted that we separate two kinds of store(`dev` and `prod`) in two files. The `prod` one doesn't have any devtools' code, for reducing the size of bundle. If you need to apply the middlewares (`redux-thunk`, `redux-saga` and so on), you need to apply them in `middlewares.js`.
 
 ### redux-devtools
 
 This boilerplate has enabled the `browser devtool` config for **Redux** automatically. To make it work, you need to download the [extension](https://github.com/zalmoxisus/redux-devtools-extension) for your browser.
 
-You can also choose `Customized DevTools` which built in your page. With this you can customized you own devtool. Click [here](https://github.com/gaearon/redux-devtools) to see more options.
+You can also choose `Customized DevTools` that built in your page. With this you can customized your own devtool. Click [here](https://github.com/gaearon/redux-devtools) to see more options.
 
 ### Production
 
-The production files built for server, so you are not supposed to visit `index.html` directly. To make it works, you should use a static server:
+The production files built for server, so you are not supposed to visit `index.html` directly. To make it works, you may need a static server:
 ```bash
-npm install -g anywhere # or others
+npm install -g serve # or others
 
-# in `./dist`
-anywhere
+# in `./dist`.
+serve
+
+# if you enable router
+serve -s
 ```
 
 ### bundle-analyzer
@@ -158,16 +161,17 @@ To get this out, please run:
 npm run build --report
 ```
 
-### sourceMap
+### Source Map
 
-You can have a better experience on debugging with sourceMap in your dev-server, but we disable it by default in production for others are not supposed to get your source code from the browser. It also can make your building process faster. Feel free to turn it on in `config/index.js: productionSourceMap`.
+You can have a better experience on debugging with sourceMap in your development, but we disable it by default in production for others are not supposed to get your source code from the browser. It also can make your building process faster. Feel free to turn it on in `config/index.js: productionSourceMap`.
 
 ### Unit test with jest
 
-We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./__tests__`. And you need you create the files named `your-js(x)-file.test.js`, or other files will not use for test. But you can set your own rules in `package.json`.
+We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./test/unit/__tests__`. And you need to create the files named `your-js(x)-file.test.js`, or it will not pass in jest. But you can set your own rules in `package.json`.
+
 ## Known Issues
 
-* When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a key in router, thanks[@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
+* When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a `key` in router, thanks to [@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
 
 * ~~When combine with `Redux`, hot-reload will cause `<Provider> does not support changing `store` on the fly...` in the console, and break hot-reload in redux.~~
 
