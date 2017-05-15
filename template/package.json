@@ -18,7 +18,7 @@
     "test": "jest"{{/unit}}
   },
   "devDependencies": {
-    "autoprefixer": "^7.0.1",
+    "autoprefixer": "^7.1.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -37,7 +37,7 @@
     {{#unit}}
     "eslint-plugin-jest": "^20.0.0",
     {{/unit}}
-    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.0",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-import": "^2.2.0",
@@ -74,7 +74,7 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "style-loader": "^0.17.0",
-    "url-loader": "^0.5.7",
+    "url-loader": "^0.5.8",
     "webpack": "^2.4.1",
     "webpack-bundle-analyzer": "^2.3.0",
     "webpack-dev-middleware": "^1.10.2",
@@ -84,7 +84,7 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "prop-types": "^15.5.8"{{#router}},{{#if_eq routerVersion "v3"}}
+    "prop-types": "^15.5.10"{{#router}},{{#if_eq routerVersion "v3"}}
     "react-router": "^3.0.2"{{/if_eq}}{{#if_eq routerVersion "v4"}}
     "react-router-config": "^1.0.0-beta.3",
     "react-loadable": "^3.3.1",
