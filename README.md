@@ -149,6 +149,8 @@ serve
 serve -s
 ```
 
+We use [babel-plugin-transform-react-remove-prop-types](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types) to remove PropType from production bundle.
+
 ### bundle-analyzer
 
 We analyze the bundle content with [webpack-bundle-analyzer](https://github.com/th0r/webpack-bundle-analyzer):
