@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Hello from 'components/Hello'
 {{#router~}}
 {{#if_eq routerVersion "v3"~}}
@@ -20,21 +20,19 @@ import './App.css'
 import Counter from 'components/Counter'
 {{/redux}}
 
-export default class App extends Component {
-  render () {
-    return (
-      <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo shake-rotate' alt='logo' />
-        </div>{{#redux}}
-        <Counter />{{/redux}}{{#if_eq devtools "normal"}}
-        <DevTools />{{/if_eq}}
-        <Hello msg='Hello World' />{{#router}}{{#if_eq routerVersion "v3"}}
-        <Router history={history} routes={routes} key={Math.random()} />{{/if_eq}}{{#if_eq routerVersion "v4"}}
-        <Router>
-          {renderRoutes(routes)}
-        </Router>{{/if_eq}}{{/router}}
-      </div>
-    )
-  }
-}
+const App = () => (
+  <div className='App'>
+    <div className='App-header'>
+      <img src={logo} className='App-logo shake-rotate' alt='logo' />
+    </div>{{#redux}}
+    <Counter />{{/redux}}{{#if_eq devtools "normal"}}
+    <DevTools />{{/if_eq}}
+    <Hello msg='Hello World' />{{#router}}{{#if_eq routerVersion "v3"}}
+    <Router history={history} routes={routes} key={Math.random()} />{{/if_eq}}{{#if_eq routerVersion "v4"}}
+    <Router>
+      {renderRoutes(routes)}
+    </Router>{{/if_eq}}{{/router}}
+  </div>
+)
+
+export default App
