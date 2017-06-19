@@ -28,7 +28,7 @@ export default [
           loader: () => import(`views/AsyncView`),
           // if you have your own loading component,
           // you should consider add it here
-          LoadingComponent: () => null
+          loading: () => null
         })
         {{/if_eq}}
       }
