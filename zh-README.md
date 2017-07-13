@@ -32,6 +32,17 @@
 # 该模版依赖于 sao 模版系统，所以请先sao
 npm install -g sao
 
+# 安装全局命令
+1. 下载脚本，放置到某个目录，比如D:\react-cli-bash
+2. 添加环境变量path
+
+![image](https://user-images.githubusercontent.com/8369212/28167180-4c0f23f0-680d-11e7-8757-2ce6b97af59e.png)
+
+3. 命令行运行
+```
+react-cli 项目名
+```
+
 # 下载模版
 sao SidKwok/react-webpack-boilerplate new-project --install
 
