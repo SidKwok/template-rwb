@@ -82,9 +82,7 @@ let webpackConfig = merge(baseWebpackConfig, {
                 to: config.build.assetsSubDirectory,
                 ignore: ['.*']
             }
-        ]),
-        // for scope hoisting
-        new webpack.optimize.ModuleConcatenationPlugin()
+        ])
     ]
 });
 
