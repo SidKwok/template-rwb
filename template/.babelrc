@@ -5,7 +5,10 @@
         "react"
     ],
     "comments": false,
-    "plugins": ["transform-runtime"],
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy"
+    ],
     "env": {
         "production": {
             "plugins": [[
