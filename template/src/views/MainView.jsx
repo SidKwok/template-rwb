@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 {{#if_eq routerVersion "v3"~}}
 import { Link } from 'react-router'
@@ -27,4 +27,4 @@ MainView.prototype.propTypes = { {{~#if_eq routerVersion "v3"}}
   route: PropTypes.object{{/if_eq}}
 }
 
-export default MainView;
+export default MainView
