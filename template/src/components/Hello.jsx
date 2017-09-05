@@ -25,9 +25,7 @@ const Hello = ({ msg }) => (
     {{/router}}
   </div>
 )
-
 Hello.prototype.propTypes = {
   msg: PropTypes.string
 }
-
 export default Hello

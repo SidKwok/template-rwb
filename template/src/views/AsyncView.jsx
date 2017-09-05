@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
 
-export default class AsyncView extends Component {
-  state = {
-    name: 'Async'
-  }
-  render () {
-    return (
-      <p>
-        I'm {this.state.name} View.
-      </p>
-    )
-  }
-}
+import React from 'react'
+
+const AsyncView = () => (
+  <p>
+    I'm Async View.
+  </p>
+)
+
+export default AsyncView

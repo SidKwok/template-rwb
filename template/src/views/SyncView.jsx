@@ -1,14 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SyncView extends Component {
-  state = {
-    name: 'Sync'
-  }
-  render () {
-    return (
-      <p>
-        I'm {this.state.name} View.
-      </p>
-    )
-  }
-}
+const SyncView = () => (
+  <p>
+    I'm Sync View.
+  </p>
+)
+
+export default SyncView
