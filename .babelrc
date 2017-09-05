@@ -1,0 +1,27 @@
+{
+    "presets": [
+        ["env", {"modules": false}],
+        "stage-1",
+        "react"
+    ],
+    "comments": false,
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy"
+        // ["transform-react-jsx", { "pragma": "h" }]
+    ],
+    "env": {
+        "production": {
+            "plugins": [[
+                "transform-react-remove-prop-types",
+                {
+                    "removeImport": true,
+                    "ignoreFilenames": ["node_modules"]
+                }
+            ]]
+        },
+        "development": {
+            "plugins": ["react-hot-loader/babel"]
+        }
+    }
+}
