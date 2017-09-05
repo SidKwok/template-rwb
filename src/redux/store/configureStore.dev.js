@@ -1,18 +1,9 @@
 import { createStore, compose } from 'redux'
 import rootReducer from '../reducers/index'
 import middlewares from './middlewares'
-import { persistState } from 'redux-devtools'
-import DevTools from 'components/DevTools'
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-const enhancer = compose(
-  middlewares,
-  DevTools.instrument(),
-  persistState(
-    window.location.href.match(
-      /[?&]debug_session=([^&#]+)\b/
-    )
-  )
-)
+const enhancer = composeEnhancers(middlewares)
 
 export default function configureStore (initialState) {
   const store = createStore(

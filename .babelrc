@@ -5,16 +5,25 @@
         "react"
     ],
     "comments": false,
-    "plugins": ["transform-runtime"],
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy"
+    ],
     "env": {
+        "production": {
+            "plugins": [[
+                "transform-react-remove-prop-types",
+                {
+                    "removeImport": true,
+                    "ignoreFilenames": ["node_modules"]
+                }
+            ]]
+        },
         "development": {
             "plugins": ["react-hot-loader/babel"]
         },
-        "production": {
-            "presets": ["react-optimize"]
-        },
         "test": {
-            "presets": ["env"],
+            "presets": ["env", "stage-1"],
             "plugins": [
                 ["module-resolver", {
                     "alias": {

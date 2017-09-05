@@ -64,7 +64,7 @@ const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.asset
 app.use(staticPath, express.static('./static'));
 
 const uri = 'http://localhost:' + port;
-const ip = 'http://' + require('internal-ip').v4() + ':' + port;
+const ip = 'http://' + require('ip').address() + ':' + port;
 
 devMiddleware.waitUntilValid(function () {
     console.log(chalk.cyan('- Local: ' + uri + '\n'));
