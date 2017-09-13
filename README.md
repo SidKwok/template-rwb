@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.0-brightgreen.svg)
-![webpack](https://img.shields.io/badge/webpack-%5E2.x.x-brightgreen.svg)
+![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
 > A SPA boilerplate with React, built with love.
@@ -12,11 +12,11 @@
 ## Features
  - **React 15.6.1**
  - **Redux 3.7.0**
- - **react-redux 5.0.3**, to bind React and Redux.
+ - **react-redux 5.0.6**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
- - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) by default.
- - **webpack 2.x**
+ - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
+ - **webpack 3.x**
  - **Express**, the dev-server.
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**

@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.0-brightgreen.svg)
-![webpack](https://img.shields.io/badge/webpack-%5E2.x.x-brightgreen.svg)
+![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
 > A SPA boilerplate with React, built with love.
@@ -12,11 +12,11 @@
 ## Features
  - **React 15.6.1**
  - **Redux 3.7.0**
- - **react-redux 5.0.3**, 用来绑定 React 和 Redux.
+ - **react-redux 5.0.6**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
- - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案
- - **webpack 2.x**
+ - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
+ - **webpack 3.x**
  - **Express**, 测试服务器
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
@@ -34,6 +34,9 @@ npm install -g sao
 
 # 下载模版
 sao SidKwok/react-webpack-boilerplate new-project --install
+
+# 如果你想尝试 React 16
+sao SidKwok/react-webpack-boilerplate#next new-project --install
 
 # 安装全部依赖
 cd new-project

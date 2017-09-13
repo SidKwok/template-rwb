@@ -82,7 +82,9 @@ let webpackConfig = merge(baseWebpackConfig, {
                 to: config.build.assetsSubDirectory,
                 ignore: ['.*']
             }
-        ])
+        ]),
+        // webpack3 new feature
+        // new webpack.optimize.ModuleConcatenationPlugin()
     ]
 });
 
