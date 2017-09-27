@@ -84,7 +84,7 @@ let webpackConfig = merge(baseWebpackConfig, {
             }
         ]),
         // webpack3 new feature
-        // new webpack.optimize.ModuleConcatenationPlugin()
+        new webpack.optimize.ModuleConcatenationPlugin()
     ]
 });
 
