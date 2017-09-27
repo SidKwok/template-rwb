@@ -1,7 +1,7 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E15.6.1-brightgreen.svg)
-![Redux](https://img.shields.io/badge/redux-%5E3.7.0-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.0.0-brightgreen.svg)
+![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
@@ -10,8 +10,8 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 15.6.1**
- - **Redux 3.7.0**
+ - **React 16.0.0**
+ - **Redux 3.7.2**
  - **react-redux 5.0.6**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
@@ -34,9 +34,6 @@ npm install -g sao
 
 # 下载模版
 sao SidKwok/react-webpack-boilerplate new-project --install
-
-# 如果你想尝试 React 16
-sao SidKwok/react-webpack-boilerplate#next new-project --install
 
 # 安装全部依赖
 cd new-project
