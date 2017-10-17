@@ -2,29 +2,29 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import * as CounterActions from '$redux/actions'
+import { increment } from '$redux/actions'
 
 import './Counter.css'
 
 const mapStateToProps = state => ({
-  counter: state.counter
+  count: state.counter.count
 })
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(CounterActions, dispatch)
+  increment: bindActionCreators(increment, dispatch)
 })
 
-const Counter = ({ counter, actions }) => (
+const Counter = ({ count, increment }) => (
   <a className='counter'
     href='javascript: void(0)'
-    onClick={actions.increment}>
-    {counter.count}
+    onClick={increment}>
+    {count}
   </a>
 )
 
 Counter.prototype.propTypes = {
-  actions: PropTypes.object,
-  counter: PropTypes.object
+  count: PropTypes.number,
+  increment: PropTypes.func
 }
 
 export default connect(
