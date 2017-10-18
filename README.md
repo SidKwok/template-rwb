@@ -121,7 +121,7 @@ We use [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/ne
 
 ### Router
 
-You can use v3 or v4 as your router, and both of them support async router! As for v4, based on its concept(everything should be component, even for config), it's a little tricky on using async router. To solve this issue, we use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
+You can use v3 or v4 as your router, and both of them support async router! We use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
 
 ### Redux
 

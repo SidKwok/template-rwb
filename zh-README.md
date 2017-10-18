@@ -121,7 +121,7 @@ dev: {
 
 ### Router
 
-可以选择v3或者是v4作为你的路由，而且两个都支持异步路由。对于v4来说，由于其理念的问题，使用异步路由是有点麻烦的，所以在这里使用了 [`react-loadable`](https://github.com/thejameskyle/react-loadable) 对路由进行拆分。这是一个十分优秀的异步拆分高阶组件，它对react的拆分程度不仅仅在于路由，甚至可以细粒度到每一个组件。至于怎么使用比较舒服大家见仁见智啦。
+可以选择v3或者是v4作为你的路由，而且两个都支持异步路由。我们在这里使用了 [`react-loadable`](https://github.com/thejameskyle/react-loadable) 对路由进行拆分。这是一个十分优秀的异步拆分高阶组件，它对react的拆分程度不仅仅在于路由，甚至可以细粒度到每一个组件。至于怎么使用比较舒服大家见仁见智啦。
 
 ### Redux
 
