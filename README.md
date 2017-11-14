@@ -1,6 +1,6 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E16.0.0-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.1.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
@@ -10,7 +10,7 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.0.0**
+ - **React 16.1.1**
  - **Redux 3.7.2**
  - **react-redux 5.0.6**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
@@ -167,14 +167,6 @@ You can have a better experience on debugging with sourceMap in your development
 ### Unit test with jest
 
 We provide [jest](http://facebook.github.io/jest/) as the default unit test library for its powerful and convenient apis. We also use [Enzyme](http://airbnb.io/enzyme/index.html) as a helper to make components more testable. All test files should place in `./test/unit/__tests__`. And you need to create the files named `your-js(x)-file.test.js`, or it will not pass in jest. But you can set your own rules in `package.json`.
-
-## Known Issues
-
-* When combine with `react-router v3`, hot-reload will cause browser's error log in `console`. This is `react-router v3`'s known issue, but it doesn't have other side effects. I solve this issue with a random number as a `key` in router, thanks to [@chenz24](https://github.com/chenz24). Noted that there is no such issue with `v4`.
-
-* ~~When combine with `Redux`, hot-reload will cause `<Provider> does not support changing `store` on the fly...` in the console, and break hot-reload in redux.~~
-
-* ~~Because of `eslint-plugin-react@6.10.3` bug,  eslint was not able to work for now.~~
 
 ## Reference
 

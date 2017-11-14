@@ -1,6 +1,6 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E16.0.0-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.1.1-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
@@ -10,7 +10,7 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.0.0**
+ - **React 16.1.1**
  - **Redux 3.7.2**
  - **react-redux 5.0.6**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
@@ -165,14 +165,6 @@ npm run build --report
 ### Unit test with jest
 
 我们使用[jest](http://facebook.github.io/jest/)作为默认的单元测试工具，它强大而简单的api使整个单元测试更加简单。为了简化组件的操作，我们还引入了[Enzyme](http://airbnb.io/enzyme/index.html)来作为工具让组件具有更多测试的接口。所有的测试文件都应该放在`./test/unit/__tests__`里头，而且测试文件应该遵循`your-js(x)-file.test.js`，否则不会被检测到。或者你可以在`package.json`里面设置你自己的检测规则。
-
-## Known Issues
-
-* 当有使用`react-router`的时候，热更新会导致浏览器的`console`报告错误信息，这是`react-router v3`的已知[issue](https://github.com/ReactTraining/react-router/issues/2704)，但是并不影响使用。我使用了随机数暂时解决了这个报错的问题，谢谢[@chenz24](https://github.com/chenz24)提供的解决方案。`v4`不存在这个问题。
-
-* ~~当有使用`Redux`的时候，热更新会导致浏览器报错`<Provider> does not support changing `store` on the fly...`，而且会导致redux热更新无效。~~
-
-* ~~由于配置和`eslint-plugin-react@6.10.2`的bug的原因，eslint暂时无法使用。~~
 
 ## Reference
 
