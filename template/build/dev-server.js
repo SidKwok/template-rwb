@@ -33,6 +33,9 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
     log: () => {}
 });
 
+// enable gzip in development
+app.use(require('compression')());
+
 // proxy api requests
 Object.keys(proxyTable).forEach(function (context) {
     let options = proxyTable[context];
