@@ -33,7 +33,11 @@
 npm install -g sao
 
 # 下载模版
-sao SidKwok/react-webpack-boilerplate new-project --install
+# via npm (recommanded)
+sao rwb new-project -u
+
+# via github
+sao SidKwok/template-rwb new-project -u
 
 # 安装全部依赖
 cd new-project

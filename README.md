@@ -33,7 +33,11 @@
 npm install -g sao
 
 # download the template
-sao SidKwok/react-webpack-boilerplate new-project --install
+# via npm (recommanded)
+sao rwb new-project -u
+
+# via github
+sao SidKwok/template-rwb new-project -u
 
 # install all this dependencies.
 cd new-project
