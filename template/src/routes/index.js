@@ -1,13 +1,9 @@
-import Loadable from 'react-loadable'
+import Imported from 'react-imported-component'
 import MainView from 'views/MainView'
 import SyncView from 'views/SyncView'
 
-const AsyncView = Loadable({
-  loader: () => import('views/AsyncView'),
-  // if you have your own loading component,
-  // you should consider add it here
-  loading: () => null
-})
+// To see more options in https://github.com/theKashey/react-imported-component
+const AsyncView = Imported(() => import('views/AsyncView'))
 
 export default [
   {

@@ -1,6 +1,6 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E16.1.1-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.2.0-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
@@ -10,7 +10,7 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.1.1**
+ - **React 16.2.0**
  - **Redux 3.7.2**
  - **react-redux 5.0.6**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
@@ -121,7 +121,7 @@ We use [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/ne
 
 ### Router
 
-You can use v3 or v4 as your router, and both of them support async router! We use [`react-loadable`](https://github.com/thejameskyle/react-loadable) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. Do whatever you want to make your app neat!
+You can use v3 or v4 as your router, and both of them support async router! We use [`react-imported-component`](https://github.com/theKashey/react-imported-component) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. It can even enable hot-reload for async components (noted that [`react-loadable`](https://github.com/thejameskyle/react-loadable) can't do that, and it is not designed to solve this issue)! Do whatever you want to make your app neat! If you like this component, please give author a star!
 
 ### Redux
 
