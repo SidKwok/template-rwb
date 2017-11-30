@@ -1,12 +1,13 @@
 {
-  "name": "react-webpack-boilerplate",
-  "version": "2.0.0",
+  "name": "template-rwb",
+  "version": "2.0.5",
   "files": [
     "sao.js",
-    "template"
+    "template",
+    "zh-README.md"
   ],
   "repository": {
-    "url": "git@github.com:SidKwok/react-webpack-boilerplate.git",
+    "url": "https://github.com/SidKwok/react-webpack-boilerplate",
     "type": "git"
   },
   "author": "SidKwok <oceankwok@hotmail.com>",
