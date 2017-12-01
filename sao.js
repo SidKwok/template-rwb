@@ -132,6 +132,6 @@ module.exports = {
         console.log('  npm run build');
 
         console.log(chalk.cyan('\n  Documentation:\n'));
-        console.log('  https://github.com/SidKwok/react-webpack-boilerplate\n');
+        console.log('  https://github.com/SidKwok/template-rwb\n');
     }
 };
