@@ -23,6 +23,10 @@ exports.cssLoaders = function (options) {
     // generate loader string to be used with extract text plugin
     function generateLoaders (loader, loaderOptions) {
         const loaders = [cssLoader];
+
+        // enable postcss by default
+        loaders.push({ loader: 'postcss-loader' });
+        
         if (loader) {
             loaders.push({
                 loader: loader + '-loader',
@@ -31,9 +35,6 @@ exports.cssLoaders = function (options) {
                 })
             });
         }
-
-        // enable postcss by default
-        loaders.push({ loader: 'postcss-loader' });
 
         // Extract CSS when that option is specified
         // (which is the case during production build)
