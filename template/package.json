@@ -44,14 +44,14 @@
     "compression": "^1.7.1",
     "connect-history-api-fallback": "^1.5.0",
     "copy-webpack-plugin": "^4.3.1",
-    "css-loader": "^0.28.8",
+    "css-loader": "^0.28.9",
     {{#lint}}
     "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
+    "eslint": "^4.16.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-react": "^5.0.0",
     {{#unit}}
-    "eslint-plugin-jest": "^21.6.2",
+    "eslint-plugin-jest": "^21.7.0",
     {{/unit}}
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.9.0",
@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-standard": "^3.0.1",
     {{/lint}}
     "eventsource-polyfill": "^0.9.6",
@@ -80,16 +80,16 @@
     "redux-devtools-log-monitor": "^1.3.0",
     {{/if_eq}}
     {{#unit}}
-    "babel-jest": "^22.0.6",
+    "babel-jest": "^22.1.0",
     "babel-plugin-module-resolver": "^3.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.0.6",
+    "jest": "^22.1.4",
     "react-test-renderer": "^16.2.0",
     {{/unit}}
-    "semver": "^5.4.1",
-    "shelljs": "^0.8.0",
-    "style-loader": "^0.19.1",
+    "semver": "^5.5.0",
+    "shelljs": "^0.8.1",
+    "style-loader": "^0.20.1",
     "url-loader": "^0.6.2",
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.2",
