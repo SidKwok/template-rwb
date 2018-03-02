@@ -117,7 +117,7 @@ dev: {
 
 ### Hot-Reload
 
-该模版使用了[react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next)来对React的组件进行热更新，甚至支持Redux的热更新！希望你玩的开心。
+该模版使用了[react-hot-loader v4](https://github.com/gaearon/react-hot-loader)来对React的组件进行热更新，甚至支持Redux的热更新！希望你玩的开心。
 
 ### ESlint
 

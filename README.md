@@ -117,7 +117,7 @@ This [doc](https://github.com/vuejs-templates/webpack/blob/master/docs/env.md) c
 
 ### Hot-Reload
 
-We use [react-hot-loader v3](https://github.com/gaearon/react-hot-loader/tree/next) to tweak React components, even for Redux! Have fun!
+We use [react-hot-loader v4](https://github.com/gaearon/react-hot-loader) to tweak React components, even for Redux! Have fun!
 
 ### ESlint
 
