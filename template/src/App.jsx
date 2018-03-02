@@ -1,4 +1,5 @@
 import React from 'react'
+import { hot } from 'react-hot-loader'
 import Hello from 'components/Hello'
 {{#router~}}
 {{#if_eq routerVersion "v3"~}}
@@ -17,6 +18,8 @@ import logo from './assets/logo.svg'
 import './App.css'
 {{#redux}}
 
+import { Provider } from 'react-redux'
+import store from '$redux/store'
 import Counter from 'components/Counter'
 {{/redux}}
 
@@ -34,5 +37,16 @@ const App = () => (
     </Router>{{/if_eq}}{{/router}}
   </div>
 )
+{{#if redux}}
 
-export default App
+const reduxApp = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+)
+
+export default hot(module)(reduxApp)
+{{else}}
+
+export default hot(module)(App)
+{{/if}}
