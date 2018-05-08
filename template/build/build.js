@@ -25,6 +25,7 @@ webpack(webpackConfig, function (err, stats) {
     animation.stop();
     if (err) throw err;
     process.stdout.write(stats.toString({
+        warnings: false,
         colors: true,
         modules: false,
         children: false,

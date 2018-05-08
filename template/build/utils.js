@@ -1,9 +1,11 @@
 const path = require('path');
 const config = require('../config');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const isProd = process.env.NODE_ENV === 'production';
 
 exports.assetsPath = function (_path) {
-    const assetsSubDirectory = process.env.NODE_ENV === 'production'
+    const assetsSubDirectory = isProd
         ? config.build.assetsSubDirectory
         : config.dev.assetsSubDirectory;
     return path.posix.join(assetsSubDirectory, _path);
@@ -15,7 +17,7 @@ exports.cssLoaders = function (options) {
     const cssLoader = {
         loader: 'css-loader',
         options: {
-            minimize: process.env.NODE_ENV === 'production',
+            minimize: isProd,
             sourceMap: options.sourceMap
         }
     };
@@ -26,7 +28,7 @@ exports.cssLoaders = function (options) {
 
         // enable postcss by default
         loaders.push({ loader: 'postcss-loader' });
-        
+
         if (loader) {
             loaders.push({
                 loader: loader + '-loader',
@@ -36,15 +38,10 @@ exports.cssLoaders = function (options) {
             });
         }
 
-        // Extract CSS when that option is specified
-        // (which is the case during production build)
-        if (options.extract) {
-            return ExtractTextPlugin.extract({
-                use: loaders
-            });
-        } else {
-            return [{ loader: 'style-loader' }].concat(loaders);
-        }
+        // Extract CSS when in production build
+        return [{
+            loader: isProd ? MiniCssExtractPlugin.loader : 'style-loader'
+        }].concat(loaders);
     }
 
     return {
