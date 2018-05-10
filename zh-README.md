@@ -1,8 +1,8 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E16.2.0-brightgreen.svg)
-![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
-![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.3.2-brightgreen.svg)
+![Redux](https://img.shields.io/badge/redux-%5E4.0.0-brightgreen.svg)
+![webpack](https://img.shields.io/badge/webpack-%5E4.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
 > A SPA boilerplate with React, built with love.
@@ -10,14 +10,14 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.2.0**
- - **Redux 3.7.2**
- - **react-redux 5.0.6**, 用来绑定 React 和 Redux.
+ - **React 16.3.2**
+ - **Redux 4.0.0**
+ - **react-redux**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
  - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
- - **webpack 3.x**
- - **Express**, 测试服务器
+ - **webpack 4.x**
+ - **Code-Spliting**, 异步组件，甚至支持 css.
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
  - **Environmental value**

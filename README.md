@@ -10,19 +10,19 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.2.0**
- - **Redux 3.7.2**
- - **react-redux 5.0.6**, to bind React and Redux.
+ - **React 16.3.2**
+ - **Redux 4.0.0**
+ - **react-redux**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
- - **webpack 3.x**
- - **Express**, the dev-server.
+ - **webpack 4.x**
+ - **Code-Spliting**, async components, and even async css.
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**
  - **Environmental value**
  - **ESlint**, with [`standard`](https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style) and [`standard-react`](https://github.com/feross/eslint-config-standard-react).
- - **Redux-devtools**, to make the stores more clear
+ - **Redux-devtools**, to make the stores more clear.
  - **bundle-analyzer**
  - **jest** with Enzyme, to make unit test for react components easier.
 
