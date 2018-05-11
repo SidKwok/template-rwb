@@ -1,10 +1,9 @@
 const path = require('path');
+const WebpackBar = require('webpackbar');
 const utils = require('./utils');
 const config = require('../config');
 
-function resolve (dir) {
-    return path.join(__dirname, '..', dir);
-}
+const resolve = dir => path.join(__dirname, '..', dir);
 
 module.exports = {
     entry: {
@@ -70,5 +69,6 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [new WebpackBar()]
 };

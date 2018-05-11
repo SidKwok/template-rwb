@@ -37,7 +37,7 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
 app.use(require('compression')());
 
 // proxy api requests
-Object.keys(proxyTable).forEach(function (context) {
+Object.keys(proxyTable).forEach(context => {
     let options = proxyTable[context];
     if (typeof options === 'string') {
         options = { target: options };
@@ -59,15 +59,15 @@ app.use(hotMiddleware);
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory);
 app.use(staticPath, express.static('./static'));
 
-const uri = 'http://localhost:' + port;
-const ip = 'http://' + require('ip').address() + ':' + port;
+const uri = `http://localhost:${port}`;
+const ip = `http://${require('ip').address()}:${port}`;
 
-devMiddleware.waitUntilValid(function () {
-    console.log(chalk.cyan('- Local: ' + uri + '\n'));
+devMiddleware.waitUntilValid(() => {
+    console.log(chalk.cyan('\n' + '- Local: ' + uri + '\n'));
     console.log(chalk.cyan('- On your Network: ' + ip + '\n'));
 });
 
-module.exports = app.listen(port, function (err) {
+module.exports = app.listen(port, err => {
     if (err) {
         console.log(err);
         return;

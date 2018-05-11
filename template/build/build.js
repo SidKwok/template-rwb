@@ -3,16 +3,12 @@ require('./check-versions')();
 
 process.env.NODE_ENV = 'production';
 
-const chalkAnimation = require('chalk-animation');
 const path = require('path');
 const chalk = require('chalk');
 const shell = require('shelljs');
 const webpack = require('webpack');
 const config = require('../config');
 const webpackConfig = require('./webpack.prod.conf');
-
-const animation = chalkAnimation.rainbow('building for production...');
-animation.start();
 
 const assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory);
 shell.rm('-rf', assetsPath);
@@ -21,8 +17,7 @@ shell.config.silent = true;
 shell.cp('-R', 'static/*', assetsPath);
 shell.config.silent = false;
 
-webpack(webpackConfig, function (err, stats) {
-    animation.stop();
+webpack(webpackConfig, (err, stats) => {
     if (err) throw err;
     process.stdout.write(stats.toString({
         warnings: false,

@@ -30,12 +30,15 @@ let webpackConfig = merge(baseWebpackConfig, {
                 vendor: {
                     test: /[\\/]node_modules[\\/]/,
                     chunks: 'initial',
-                    name: 'vendor',
+                    name: 'vendor'
                 }
             }
         },
         minimizer: [
             new UglifyJsPlugin({
+                sourceMap: config.build.productionSourceMap,
+                cache: true,
+                parallel: true,
                 uglifyOptions: {
                     compress: {
                         warnings: false
@@ -43,7 +46,7 @@ let webpackConfig = merge(baseWebpackConfig, {
                     comments: false,
                     sourceMap: true
                 }
-            }),
+            })
         ]
     },
     plugins: [

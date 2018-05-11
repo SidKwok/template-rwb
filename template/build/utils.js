@@ -4,14 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isProd = process.env.NODE_ENV === 'production';
 
-exports.assetsPath = function (_path) {
+exports.assetsPath = _path => {
     const assetsSubDirectory = isProd
         ? config.build.assetsSubDirectory
         : config.dev.assetsSubDirectory;
     return path.posix.join(assetsSubDirectory, _path);
 };
 
-exports.cssLoaders = function (options) {
+exports.cssLoaders = options => {
     options = options || {};
 
     const cssLoader = {
@@ -54,7 +54,7 @@ exports.cssLoaders = function (options) {
     };
 }
 
-exports.styleLoaders = function (options) {
+exports.styleLoaders = options => {
     const output = [];
     const loaders = exports.cssLoaders(options);
     for (let extension in loaders) {
