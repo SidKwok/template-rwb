@@ -16,7 +16,7 @@
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
- - **webpack 4.x**
+ - **webpack 4.x**, support node 6 and above
  - **Code-Spliting**, async components, and even async css.
  - **Hot-Reload**, support both React and Redux!
  - **Proxy**

@@ -16,7 +16,7 @@
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
  - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
- - **webpack 4.x**
+ - **webpack 4.x**, 只支持 node 6 及以上
  - **Code-Spliting**, 异步组件，甚至支持 css.
  - **Hot-Reload**, 支持 React 和 Redux!
  - **Proxy**
