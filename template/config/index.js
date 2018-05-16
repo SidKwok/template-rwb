@@ -1,6 +1,14 @@
 const path = require('path');
 
 module.exports = {
+    base: {
+        // CSS modules off by default.
+        // Before you set it to `true`,
+        // remember that the style will be
+        // messed up for our template's style importing
+        // is not for CSS modules
+        cssModules: false
+    },
     build: {
         env: require('./prod.env'),
         index: path.resolve(__dirname, '../dist/index.html'),

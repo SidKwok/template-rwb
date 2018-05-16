@@ -16,6 +16,7 @@
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
  - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
+ - **CSS Modules**, support CSS Modules，off by default
  - **webpack 4.x**, support node 6 and above
  - **Code-Spliting**, async components, and even async css.
  - **Hot-Reload**, support both React and Redux!
@@ -118,6 +119,10 @@ This [doc](https://github.com/vuejs-templates/webpack/blob/master/docs/env.md) c
 ### Hot-Reload
 
 We use [react-hot-loader v4](https://github.com/gaearon/react-hot-loader) to tweak React components, even for Redux! Have fun!
+
+### CSS Modules
+
+The template support CSS Modules，you can turn it on in `config/index.js: cssModules`.
 
 ### ESlint
 

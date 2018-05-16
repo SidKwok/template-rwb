@@ -15,7 +15,8 @@
  - **react-redux**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
- - **ES6**，默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
+ - **ES6**, 默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
+ - **CSS Modules**, 支持CSS Modules，默认关闭
  - **webpack 4.x**, 只支持 node 6 及以上
  - **Code-Spliting**, 异步组件，甚至支持 css.
  - **Hot-Reload**, 支持 React 和 Redux!
@@ -118,6 +119,10 @@ dev: {
 ### Hot-Reload
 
 该模版使用了[react-hot-loader v4](https://github.com/gaearon/react-hot-loader)来对React的组件进行热更新，甚至支持Redux的热更新！希望你玩的开心。
+
+### CSS Modules
+
+该模板支持 CSS Modules，可以在`config/index.js: cssModules`中将其打开。
 
 ### ESlint
 

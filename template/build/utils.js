@@ -18,7 +18,8 @@ exports.cssLoaders = options => {
         loader: 'css-loader',
         options: {
             minimize: isProd,
-            sourceMap: options.sourceMap
+            sourceMap: options.sourceMap,
+            modules: config.base.cssModules
         }
     };
 
