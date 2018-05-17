@@ -1,5 +1,6 @@
 # react-webpack-boilerplate
 
+![node](https://img.shields.io/node/v/webpack.svg)
 ![React](https://img.shields.io/badge/react-%5E16.3.2-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E4.0.0-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E4.x.x-brightgreen.svg)

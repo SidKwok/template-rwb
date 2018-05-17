@@ -1,8 +1,9 @@
 # react-webpack-boilerplate
 
-![React](https://img.shields.io/badge/react-%5E16.2.0-brightgreen.svg)
-![Redux](https://img.shields.io/badge/redux-%5E3.7.2-brightgreen.svg)
-![webpack](https://img.shields.io/badge/webpack-%5E3.x.x-brightgreen.svg)
+![node](https://img.shields.io/node/v/webpack.svg)
+![React](https://img.shields.io/badge/react-%5E16.3.2-brightgreen.svg)
+![Redux](https://img.shields.io/badge/redux-%5E4.0.0-brightgreen.svg)
+![webpack](https://img.shields.io/badge/webpack-%5E4.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
 > A SPA boilerplate with React, built with love.
