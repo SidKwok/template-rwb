@@ -1,7 +1,7 @@
 # react-webpack-boilerplate
 
 ![node](https://img.shields.io/node/v/webpack.svg)
-![React](https://img.shields.io/badge/react-%5E16.3.2-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.4.0-brightgreen.svg)
 ![Redux](https://img.shields.io/badge/redux-%5E4.0.0-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E4.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
@@ -11,7 +11,7 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.3.2**
+ - **React 16.4.0**
  - **Redux 4.0.0**
  - **react-redux**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
@@ -131,7 +131,7 @@ The template support CSS Modules，you can turn it on in `config/index.js: cssMo
 
 ### Router
 
-You can use v3 or v4 as your router, and both of them support async router! We use [`react-imported-component`](https://github.com/theKashey/react-imported-component) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. It can even enable hot-reload for async components (noted that [`react-loadable`](https://github.com/thejameskyle/react-loadable) can't do that, and it is not designed to solve this issue)! Do whatever you want to make your app neat! If you like this component, please give author a star!
+You can use v3 or v4 as your router, and both of them support async router! We use [`loadable-components`](https://github.com/smooth-code/loadable-components) to split router into several chunk. It's an awesome Higher-Order-Component! It can not only split router for react, but also every single component you have. It can even enable hot-reload for async components (noted that [`react-loadable`](https://github.com/thejameskyle/react-loadable) can't do that, and it is not designed to solve this issue)! Do whatever you want to make your app neat! If you like this component, please give author a star!
 
 ### Redux
 
