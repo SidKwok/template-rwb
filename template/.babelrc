@@ -1,11 +1,9 @@
 {
     "presets": [
-        ["env", {"modules": false, "useBuiltIns": true}],
-        "stage-1",
+        ["env", {"modules": false, "useBuiltIns": "usage"}],
         "react"
     ],
     "plugins": [
-        "transform-runtime",
         "transform-decorators-legacy"
     ],
     "env": {
