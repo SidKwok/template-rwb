@@ -1,7 +1,8 @@
 {
     "presets": [
         ["env", {"modules": false, "useBuiltIns": "usage"}],
-        "react"
+        "react",
+        "stage-1"
     ],
     "plugins": [
         "transform-decorators-legacy"

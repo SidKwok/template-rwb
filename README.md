@@ -16,7 +16,7 @@
  - **react-redux**, to bind React and Redux.
  - **react-router v4 or v3**, choose the one you are familiar with.
  - **JSX**
- - **ES6**, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
+ - **ES6**, use `babel-polyfill` to make things work, support [`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/) and decorators by default.
  - **CSS Modules**, support CSS Modules，off by default
  - **webpack 4.x**, support node 6 and above
  - **Code-Spliting**, async components, and even async css.
