@@ -5,13 +5,13 @@ if (!process.env.NODE_ENV) {
     process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV);
 }
 
-const opn = require('opn');
 const chalk = require('chalk');
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
 const proxyMiddleware = require('http-proxy-middleware');
 const webpackConfig = require('./webpack.dev.conf');
+const openBrowser = require('./utils/openBrowser')
 
 // default port where dev server listens for incoming traffic
 const port = process.env.PORT || config.dev.port;
@@ -75,6 +75,6 @@ module.exports = app.listen(port, err => {
 
     // when env is testing, don't need open it
     if (autoOpenBrowser && process.env.NODE_ENV !== 'testing') {
-        opn(uri)
+        openBrowser(uri)
     };
 });
