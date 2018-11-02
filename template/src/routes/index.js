@@ -1,9 +1,9 @@
-import loadable from 'loadable-components'
+import React, { Suspense } from 'react'
 import MainView from 'views/MainView'
 import SyncView from 'views/SyncView'
 
-// To see more options in https://github.com/smooth-code/loadable-components
-const AsyncView = loadable(() => import('views/AsyncView'))
+// https://reactjs.org/docs/code-splitting.html#suspense
+const AsyncView = React.lazy(() => import('views/AsyncView'))
 
 export default [
   {
@@ -16,7 +16,11 @@ export default [
       },
       {
         path: '/async',
-        component: AsyncView
+        component: () => (
+          <Suspense fallback={<div>Loading</div>}>
+            <AsyncView />
+          </Suspense>
+        )
       }
     ]
   }
