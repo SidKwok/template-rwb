@@ -1,11 +1,7 @@
 {
     "presets": [
-        ["env", {"modules": false, "useBuiltIns": "usage"}],
-        "react",
-        "stage-1"
-    ],
-    "plugins": [
-        "transform-decorators-legacy"
+        ["@babel/preset-env", {"modules": false, "useBuiltIns": "usage"}],
+        "@babel/preset-react"
     ],
     "env": {
         "production": {
