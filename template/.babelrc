@@ -3,6 +3,10 @@
         ["@babel/preset-env", {"modules": false, "useBuiltIns": "entry"}],
         "@babel/preset-react"
     ],
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-transform-runtime"
+    ],
     "env": {
         "production": {
             "plugins": [[
@@ -17,7 +21,7 @@
             "plugins": ["react-hot-loader/babel"]
         }{{#unit}},
         "test": {
-            "presets": ["env", "stage-1"],
+            "presets": ["@babel/preset-env"],
             "plugins": [
                 ["module-resolver", {
                     "alias": {

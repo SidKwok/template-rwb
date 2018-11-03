@@ -3,7 +3,7 @@ import MainView from 'views/MainView'
 import SyncView from 'views/SyncView'
 
 // https://reactjs.org/docs/code-splitting.html#suspense
-const AsyncView = React.lazy(() => import('views/AsyncView'))
+const AsyncView = React.lazy(() => import(/* webpackChunkName: "async" */ 'views/AsyncView'))
 
 export default [
   {
