@@ -1,6 +1,6 @@
 {
     "presets": [
-        ["@babel/preset-env", {"modules": false, "useBuiltIns": "usage"}],
+        ["@babel/preset-env", {"modules": false, "useBuiltIns": "entry"}],
         "@babel/preset-react"
     ],
     "env": {
