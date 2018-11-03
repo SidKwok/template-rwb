@@ -15,16 +15,10 @@ module.exports = {
     browser: true,
   },
   extends: [
-      // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-      'standard',
-      // https://github.com/feross/eslint-config-standard-react
-      'standard-react'
-  ],
-  // https://github.com/yannickcr/eslint-plugin-react
-  plugins: [
-    'react',
-    'babel',
-    'promise'
+    // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
+    'standard',
+    // https://github.com/feross/eslint-config-standard-react
+    'standard-react'
   ],
   // add your custom rules here
   'rules': {
