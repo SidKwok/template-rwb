@@ -19,8 +19,8 @@
     "test": "jest"{{/unit}}
   },
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "prop-types": "^15.6.2"{{#router}},{{#if_eq routerVersion "v3"}}
     "react-router": "^3.2.1"{{/if_eq}}{{#if_eq routerVersion "v4"}}
     "react-router-config": "^4.4.0-beta.6",
@@ -29,16 +29,17 @@
     "redux": "^4.0.1"{{/redux}}
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.1.5",
     "@babel/plugin-proposal-decorators": "^7.1.2",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.1.5",
     "autoprefixer": "^9.3.1",
     "babel-loader": "^8.0.4",
     "babel-plugin-module-resolver": "^3.1.1",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.19",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.20",
     "chalk": "^2.4.1",
     "child_process": "^1.0.2",
     "compression": "^1.7.3",
@@ -89,15 +90,15 @@
     "react-test-renderer": "^16.6.0",
     {{/unit}}
     "semver": "^5.6.0",
-    "shelljs": "^0.8.2",
+    "shelljs": "^0.8.3",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
-    "webpack": "^4.24.0",
+    "webpack": "^4.25.1",
     "webpack-bundle-analyzer": "^3.0.3",
     "webpack-dev-middleware": "^3.4.0",
     "webpack-hot-middleware": "^2.24.3",
     "webpack-merge": "^4.1.4",
-    "webpackbar": "^2.6.3"
+    "webpackbar": "^3.1.2"
   },
   "engines": {
     "node": ">= 6.0.0",
