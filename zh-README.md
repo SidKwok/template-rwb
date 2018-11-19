@@ -1,8 +1,8 @@
 # react-webpack-boilerplate
 
 ![node](https://img.shields.io/node/v/webpack.svg)
-![React](https://img.shields.io/badge/react-%5E16.4.0-brightgreen.svg)
-![Redux](https://img.shields.io/badge/redux-%5E4.0.0-brightgreen.svg)
+![React](https://img.shields.io/badge/react-%5E16.6.3-brightgreen.svg)
+![Redux](https://img.shields.io/badge/redux-%5E4.0.1-brightgreen.svg)
 ![webpack](https://img.shields.io/badge/webpack-%5E4.x.x-brightgreen.svg)
 ![MIT](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)
 
@@ -11,12 +11,12 @@
 <div align="center"><img width="400" src="screenshots.png" /></div>
 
 ## Features
- - **React 16.4.0**
- - **Redux 4.0.0**
+ - **React 16.6.3**
+ - **Redux 4.0.1**
  - **react-redux**, 用来绑定 React 和 Redux.
  - **react-router v4 或者 v3**, 而且都支持异步路由
  - **JSX**
- - **ES6**, 使用`babel-polyfill`, 默认支持[`stage-1`](http://babeljs.io/docs/plugins/preset-stage-1/)草案和装饰器(decorator)。
+ - **ES6**, babel7, 使用`babel-polyfill`, 装饰器(decorator)。
  - **CSS Modules**, 支持CSS Modules，默认关闭
  - **webpack 4.x**, 只支持 node 6 及以上
  - **Code-Spliting**, 异步组件，甚至支持 css.
@@ -131,7 +131,7 @@ dev: {
 
 ### Router
 
-可以选择v3或者是v4作为你的路由，而且两个都支持异步路由。我们在这里使用了 [`loadable-components`](https://github.com/smooth-code/loadable-components) 对路由进行拆分。这是一个十分优秀的异步拆分高阶组件，它对react的拆分程度不仅仅在于路由，甚至可以细粒度到每一个组件，而且支持开发环境中异步路由的热重载([`react-loadable`](https://github.com/thejameskyle/react-loadable) 不能做到这一点，而它本身的设计就不是解决这个问题的)。喜欢该组件的可以去 Github 给作者星星作为支持。
+可以选择v3或者是v4作为你的路由，而且两个都支持异步路由。我们在这里使用了 [`React.lazy`](https://reactjs.org/docs/code-splitting.html#suspense) 对路由进行拆分。
 
 ### Redux
 
@@ -178,4 +178,4 @@ npm run build --report
 
 ## Reference
 
-* [vue-cli/webpack](https://github.com/vuejs-templates/webpack)
+- [vue-cli/webpack](https://github.com/vuejs-templates/webpack)
